@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+:root{
+    --body-color : black;
+    --primary-blue: #0147FF;
+    --secondary-blue : #1A1A1A;
+    --secondary-grey :#DEDEE0;
+    --primary-white : #FFFFFF;
+    --secondary-dark : #1C1A1A;
+    --secondary-darkgrey: #7E7E7E;
+    --font : Syne;
+    --font-weight-normal:400;
+    --font-weight-bold:700;
+}
+
+body{
+    padding: 0;
+    background-color: var(--body-color);
+    font-family: var(--font);
+}
+
+/* header */
+.nav-logo{
+    max-height: 20px;
+    width: 30;
+}
+
+.nav-home-border{
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+.nav-text{
+    color: var(--primary-white);
+}
+
+.nav-text:hover {
+  color: var(--primary-blue);
+}
+
+
+/* main */
+/* home */
+
+.card-bg-color{
+    background-color: var(--secondary-blue);
+    border-radius: 20px;
+}
+
+/* footer */
+.footer-gray{
+    background-color: var(--secondary-grey);
+
+}
+
+.footer-blue{
+    background-color: var(--primary-blue);
+}
+.custom-radius{
+    border-radius: 40px;
+}
+
+.footer-text{
+    color: var(--secondary-dark);
+    text-decoration: none;
+}
+
+.footer-btn{
+    background-color: var(--primary-white);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+}
+
+.footer-input{
+    background-color: var(--primary-blue);
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+@media (min-width: 992px) {
+  .footer-gray {
+    border-radius: 32px 0 0 32px;
+    padding-right: 4rem !important;
+  }
+
+  .footer-gray{
+    margin-right: -40px;
+  }
+  .footer-blue {
+    border-radius: 32px;
+    position: relative;
+    z-index: 10;
+  }
+}
