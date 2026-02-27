@@ -13,7 +13,7 @@
 <body>
     <div>
         <!-- header section -->
-        <header class="py-3 ">
+        <header class="py-2 on-big-screen">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand " href="#"><img src="./image/logo/nexus.svg" class="nav-logo"></a>
@@ -23,31 +23,32 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="offcanvas offcanvas-end bg-black text-white" tabindex="-1" id="mobileMenu">
+                    <div class="offcanvas offcanvas-end bg-black text-white offcanvas-custom-width " tabindex="-1"
+                        id="mobileMenu">
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title fw-bold fs-3">nexus</h5>
                             <button type="button" class="btn-close btn-close-white"
                                 data-bs-dismiss="offcanvas"></button>
                         </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav ms-auto align-items-lg-center gap-1 gap-lg-3">
+                        <div class="offcanvas-body py-3 ">
+                            <ul class="navbar-nav ms-auto align-items-lg-center gap-1 gap-lg- ">
                                 <li class="nav-item">
-                                    <a class="nav-link nav-text nav-home-border px-4 " href="#">Home</a>
+                                    <a class="nav-link nav-text text-white" href="#">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-text" href="#">Schedule</a>
+                                    <a class="nav-link nav-text text-white" href="#">Schedule</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-text " href="#">Speakers</a>
+                                    <a class="nav-link nav-text text-white" href="#">Speakers</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-text" href="#">Tickets</a>
+                                    <a class="nav-link nav-text text-white" href="#">Tickets</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-text" href="#">Venue</a>
+                                    <a class="nav-link nav-text text-white" href="#">Venue</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-text" href="#">Sponsors</a>
+                                    <a class="nav-link nav-text text-white" href="#">Sponsors</a>
                                 </li>
                             </ul>
                         </div>
@@ -56,28 +57,57 @@
             </nav>
         </header>
 
-        <main>
-            <div class="container">
+        <Section>
+            <main>
+                <div class="on-big-screen">
+                    <!-- home section -->
+                    <div class="container hero-section-container">
+                        <div class="hero-card">
+                            <div class="hero-topbar d-flex justify-content-between align-items-center mb-4">
+                                <span class="text-white fw-bold fs-5">OCTOBER 15-17, 2052</span>
+                                <span class="text-white fw-semibold d-none d-md-inline fs-5">Horizon Convention Center,
+                                    TechCity, Utopolis</span>
+                            </div>
 
-                <div class="card card-bg-color">
-                    <div class="card-body ">
-                        <span class="text-start text-white">OCTOBER 15-17, 2052</span>
+                            <!-- Hero Content -->
+                            <div class="hero-content position-relative">
+                                <div class="row ">
+                                    <div class="col-lg top-content">
+                                        <h1 class="hero-title text-white fw-bold hero-custom-font">
+                                            NEXT-GEN AI<br />SUMMIT
+                                        </h1>
+                                        <p class="hero-subtitle text-white mb-5 fs-5">
+                                            Explore the cutting-edge innovations shaping the future of
+                                            artificial intelligence. Join global leaders and
+                                            visionaries for two days of insights, discussions, and
+                                            breakthroughs.
+                                        </p>
+                                        <a href="#" class="hero-btn">
+                                            Early bird tickets
+                                            <i class="bi bi-arrow-up-right ms-2"></i>
+                                        </a>
+                                    </div>
+                                    <div class="image-container ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-            </div>
-        </main>
+            </main>
+        </Section>
 
-        <footer class="py-5">
+        <!-- footer section -->
+        <footer class="py-5 on-big-screen">
             <div class="container">
-                <div class="row g-0 custom-radius overflow-hidden ">
-                    <div class="col-lg-6 footer-gray p-4 p-md-5 d-flex flex-column ">
-                        <h3 class="fw-bold fs-7 text-dark mb-4 mb-md-5 footer-text">
+                <div class="row custom-radius overflow-hidden  ">
+                    <div class="col-lg-6 footer-gray p-auto  p-md-5 d-flex flex-column">
+                        <h3 class="fw-bold fs-7 text-dark mb-4 mb-md-5 footer-text-large mt-3 ms-3">
                             Next-Gen AI Summit 2052
                         </h3>
 
-                        <div class="d-flex flex-wrap gap-4 gap-md-5 mb-5 flex-grow-1 fs-5 me-5">
-                            <ul class="list-unstyled d-flex flex-column gap-3 me-5">
+                        <div class="d-flex gap-4 gap-md-5 mb-5 flex-grow-1 fs-5 me-5 ms-3">
+                            <ul class="list-unstyled d-flex flex-column gap-3 me-4">
                                 <li><a href="#" class="footer-link footer-text">Agenda</a></li>
                                 <li><a href="#" class="footer-link footer-text">Speakers</a></li>
                                 <li><a href="#" class="footer-link footer-text">Register</a></li>
@@ -85,33 +115,39 @@
                                 <li><a href="#" class="footer-link footer-text">FAQ</a></li>
                             </ul>
                             <ul class="list-unstyled d-flex flex-column gap-3 ">
-                                <li><a href="#" class="footer-link footer-text">Terms & Conditions</a></li>
-                                <li><a href="#" class="footer-link footer-text">Privacy Policy</a></li>
-                                <li><a href="#" class="footer-link footer-text">Cookie Policy</a></li>
+                                <li><a href="#" class="footer-link footer-text footer-text-part-2">Terms &
+                                        Conditions</a></li>
+                                <li><a href="#" class="footer-link footer-text footer-text-part-2">Privacy Policy</a>
+                                </li>
+                                <li><a href="#" class="footer-link footer-text footer-text-part-2">Cookie Policy</a>
+                                </li>
                             </ul>
                         </div>
-                        <p class="text-muted small mb-4 fs-5">
+                        <p class="text-muted footer-text small mb-4 fs-5 ms-3">
                             © 2052 Next-Gen AI Summit. All rights reserved.
                         </p>
                     </div>
 
                     <div class="col-lg-6 footer-blue p-4 p-md-5 d-flex flex-column justify-content-between fs-7">
                         <div class="mb-5 ms-4 mt-3">
-                            <h4 class="text-white fs-7 fw-bold tracking-wide mb-1">
+                            <h4 class="text-white footer-text-large fs-7 fw-bold tracking-wide mb-2 ">
                                 STAY UPDATED
                             </h4>
                             <p class="text-white-50 small mb-4 fs-5">
                                 Subscribe for event updates & exclusive content.
                             </p>
+                            <div class="mt-5">
+                                <form class="d-flex flex-column align-items-start  ">
+                                    <input type="email" class="footer-input footer-text mb-4 w-100" placeholder="Email"
+                                        required />
+                                    <button type="submit" class="footer-btn footer-text fs-5">Stay updated</button>
+                                </form>
+                            </div>
 
-                            <form class="d-flex flex-column align-items-start w-100">
-                                <input type="email" class="footer-input w-100 mb-4" placeholder="Email" required />
-                                <button type="submit" class="footer-btn fs-5">Stay updated</button>
-                            </form>
                         </div>
 
-                        <div>
-                            <h4 class="text-white fs-7 fw-bold tracking-wide mb-3">
+                        <div class="ms-4 mb-4">
+                            <h4 class="text-white footer-text-large fs-7 fw-bold tracking-wide mb-3">
                                 FOLLOW US
                             </h4>
                             <div class="d-flex gap-3 fs-5">

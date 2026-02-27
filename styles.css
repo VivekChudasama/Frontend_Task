@@ -1,96 +1,197 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 
-:root{
-    --body-color : black;
+:root {
+    --body-color: black;
     --primary-blue: #0147FF;
-    --secondary-blue : #1A1A1A;
-    --secondary-grey :#DEDEE0;
-    --primary-white : #FFFFFF;
-    --secondary-dark : #1C1A1A;
+    --secondary-blue: #1A1A1A;
+    --secondary-grey: #DEDEE0;
+    --primary-white: #FFFFFF;
+    --secondary-dark: #1C1A1A;
     --secondary-darkgrey: #7E7E7E;
-    --font : Syne;
-    --font-weight-normal:400;
-    --font-weight-bold:700;
+    --font: Syne;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
 }
 
-body{
+body {
     padding: 0;
     background-color: var(--body-color);
     font-family: var(--font);
 }
 
 /* header */
-.nav-logo{
-    max-height: 20px;
-    width: 30;
+.nav-logo {
+    max-height: 30px;
+    width: auto;
 }
 
-.nav-home-border{
-    border: 1px solid white;
+.nav-text {
+    font-size: 18px;
+    transition: all .3s ease;
+    box-sizing: border-box;
+    border: 1px solid transparent;
     border-radius: 50px;
-    padding: 10px 30px;
-}
-
-.nav-text{
-    color: var(--primary-white);
+    padding: 8px 24px !important;
 }
 
 .nav-text:hover {
-  color: var(--primary-blue);
+    border-color: #fff;
+    color: var(--primary-white) !important;
 }
-
 
 /* main */
 /* home */
 
-.card-bg-color{
+.hero-section-container {
     background-color: var(--secondary-blue);
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
+.hero-card {
+    padding: 80px 50px;
+}
+
+.hero-custom-font {
+    font-size: 90px;
+}
+
+.hero-3d-image {
+    position: relative;
+}
+
+.hero-btn {
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 22px 55px;
+    font-size: 22px;
+    color: var(--primary-white);
+    background: #0147FF;
+    background: linear-gradient(49deg, rgba(1, 71, 255, 1) 0%, rgba(6, 32, 117, 1) 92%);
+}
+
+.image-container {
+    background-image: url(./image/home/B1.png);
+    z-index: 0;
+    max-height: 442px;
+    max-width: 436px;
+}
+
+
 /* footer */
-.footer-gray{
+.footer-gray {
     background-color: var(--secondary-grey);
 
 }
 
-.footer-blue{
+.footer-blue {
     background-color: var(--primary-blue);
 }
-.custom-radius{
+
+.custom-radius {
     border-radius: 40px;
 }
 
-.footer-text{
+.footer-text {
     color: var(--secondary-dark);
     text-decoration: none;
 }
 
-.footer-btn{
+.footer-btn {
+    margin: 10px 0 0 0;
     background-color: var(--primary-white);
     border: none;
-    padding: 15px 40px;
+    padding: 18px 60px;
     border-radius: 30px;
 }
 
-.footer-input{
+.footer-input {
     background-color: var(--primary-blue);
     border: none;
     border-bottom: 2px solid white;
+    max-width: 600px;
+}
+
+.footer-input::placeholder {
+    color: var(--primary-white);
+    font-size: 20px;
+    padding: 0 0 5px 0;
+}
+
+.social-link {
+    margin: 10px 0 0 0;
+    height: 35px;
+    color: var(--primary-white);
 }
 
 @media (min-width: 992px) {
-  .footer-gray {
-    border-radius: 32px 0 0 32px;
-    padding-right: 4rem !important;
-  }
+    .footer-gray {
+        border-radius: 50px 0 0 20px;
+        padding-right: 64px !important;
+        max-height: 530px;
+    }
 
-  .footer-gray{
-    margin-right: -40px;
-  }
-  .footer-blue {
-    border-radius: 32px;
-    position: relative;
-    z-index: 10;
-  }
+    .footer-blue {
+        border-radius: 50px;
+        position: relative;
+        z-index: 10;
+        margin-left: -40px;
+        flex: 0 0 calc(50% + 40px);
+        max-width: calc(50% + 40px);
+        max-height: 530px;
+    }
+}
+
+@media (min-width :1025px) {
+    .on-big-screen {
+        margin: 0 230px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    body {
+        margin: 0 20px;
+    }
+
+    .nav-logo {
+        max-width: 110px;
+    }
+
+    .navbar-toggler {
+        transform: scale(0.8);
+    }
+
+    .footer-gray {
+        padding: 40px 25px 80px;
+    }
+
+    .footer-gray .row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-gray .row>div {
+        width: 100%;
+    }
+
+    .footer-blue {
+        padding: 30px 30px 30px 5px !important;
+    }
+
+    .footer-btn {
+        padding: 5px 10px !important;
+        border-radius: 30px;
+    }
+
+    .footer-text-large {
+        font-size: 22px;
+    }
+
+    .footer-text {
+        font-size: 16px;
+    }
+
+    .offcanvas-custom-width {
+        --bs-offcanvas-width: 70%;
+    }
 }
