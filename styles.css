@@ -52,11 +52,7 @@ body {
 }
 
 .hero-custom-font {
-    font-size: 90px;
-}
-
-.hero-3d-image {
-    position: relative;
+    font-size: 95px;
 }
 
 .hero-btn {
@@ -67,13 +63,25 @@ body {
     color: var(--primary-white);
     background: #0147FF;
     background: linear-gradient(49deg, rgba(1, 71, 255, 1) 0%, rgba(6, 32, 117, 1) 92%);
+    margin: 40px 0 0 0;
+}
+
+.hero-content {
+    z-index: 100;
+}
+
+.top-text{
+    position: relative;
+    z-index: 1;
 }
 
 .image-container {
     background-image: url(./image/home/B1.png);
+    position: absolute;
+    width: 438px;
+    height: 443px;
+    margin: 50px 600px;
     z-index: 0;
-    max-height: 442px;
-    max-width: 436px;
 }
 
 
