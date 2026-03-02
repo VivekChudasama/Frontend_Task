@@ -13,10 +13,10 @@
 <body>
     <div>
         <!-- header section -->
-        <header class="py-2 on-big-screen">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand " href="#"><img src="./image/logo/nexus.svg" class="nav-logo"></a>
+        <header class="py-2 on-big-screen ">
+            <nav class="navbar navbar-expand-lg nav-bar">
+                <div class="container nav-bar-content">
+                    <a class="navbar-brand" href="#"><img src="./images/logo/nexus.svg" class="nav-logo"></a>
 
                     <button class="navbar-toggler border-white border-opacity-50" type="button"
                         data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
@@ -26,12 +26,11 @@
                     <div class="offcanvas offcanvas-end bg-black text-white offcanvas-custom-width " tabindex="-1"
                         id="mobileMenu">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title fw-bold fs-3">nexus</h5>
                             <button type="button" class="btn-close btn-close-white"
                                 data-bs-dismiss="offcanvas"></button>
                         </div>
                         <div class="offcanvas-body py-3 ">
-                            <ul class="navbar-nav ms-auto align-items-lg-center gap-1 gap-lg- ">
+                            <ul class="navbar-nav ms-auto align-items-lg-center gap-1 gap-lg fs-5">
                                 <li class="nav-item">
                                     <a class="nav-link nav-text text-white" href="#">Home</a>
                                 </li>
@@ -57,73 +56,243 @@
             </nav>
         </header>
 
-        <Section>
-            <main>
-                <div class="on-big-screen">
-                    <!-- home section -->
-                    <div class="container hero-section-container">
-                        <div class="hero-card">
-                            <div class="hero-topbar d-flex justify-content-between align-items-center mb-5">
-                                <span class="text-white fw-bold fs-5">OCTOBER 15-17, 2052</span>
-                                <span class="text-white fw-semibold d-none d-md-inline fs-5">Horizon Convention Center,
-                                    TechCity, Utopolis</span>
-                            </div>
+        <main>
+            <div class="on-big-screen py-3 hero-section">
+                <!-- home section -->
+                <div class="container hero-section-container">
+                    <div class="hero-card">
+                        <div
+                            class="hero-topbar d-flex flex-column align-items-start gap-3 flex-sm-row justify-content-sm-between align-items-sm-center mb-5">
+                            <span class="text-white hero-topbar-font hero-desc-font">OCTOBER 15-17, 2052</span>
+                            <span class="text-white  hero-topbar-font ">Horizon Convention Center,
+                                TechCity, Utopolis</span>
+                        </div>
 
-                            <!-- Hero Content -->
-                            <div class="hero-content">
-
-                                <div class="row ">
-                                    <div class="col-lg top-content">
-                                        <div class="image-container ">
-                                        </div>
-                                        <h1 class="hero-title text-white fw-bold hero-custom-font top-text mb-4 mt-4">
-                                            NEXT-GEN AI<br />SUMMIT
-                                        </h1>
-                                        <p class="hero-subtitle text-white mb-5 fs-5 top-text">
-                                            Explore the cutting-edge innovations shaping the future of
-                                            artificial intelligence.
-                                            <br>
-                                            Join global leaders and
-                                            visionaries for two days of insights, discussions, and
-                                            breakthroughs.
-                                        </p>
-                                        <div class="mt-5">
-                                            <a href="#" class="hero-btn">
-                                                Early bird tickets
-                                                <i class="bi bi-arrow-up-right ms-2"></i>
-                                            </a>
-                                        </div>
-
+                        <!-- Hero Content -->
+                        <div class="hero-content position-relative">
+                            <img src="./images/home/B1.png" alt="Hero Graphic" class="hero-star-img">
+                            <div class="row align-items-center">
+                                <div class="col-lg-9 top-content">
+                                    <h1 class="hero-title text-white fw-bold hero-custom-font top-text mb-4 mt-5">
+                                        NEXT-GEN AI <br> SUMMIT
+                                    </h1>
+                                    <span class="text-white hero-topbar-font hero-desc-font">OCTOBER 15-17, 2052</span>
+                                    <p class="hero-subtitle text-white mb-5 mt-4 top-text ">
+                                        Explore the cutting-edge innovations shaping the future of
+                                        artificial intelligence.
+                                        <br>Join global leaders and visionaries for two days of insights, discussions,
+                                        and breakthroughs.
+                                    </p>
+                                    <div class="mt-5 mb-5 mb-lg-0 position-relative">
+                                        <a href="#" class="hero-btn">
+                                            Early bird tickets
+                                            <i class="bi bi-arrow-up-right ms-2"></i>
+                                        </a>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- sponsors -->
-                <div class="company-section py-5 row ">
-                    <div class="container col-lg-8 col-mb-3 col-sm-1 flex-column">
-                        <div class="company-bar d-flex justify-content-between align-items-center">
-                            <img src="./image/home/company logo/Vector.svg" alt="company Logos"
-                                class="company-img " />
+            <!-- sponsors -->
+            <div class="on-big-screen">
+                <div class="container company-section py-5 mt-5 mb-5">
+                    <div class=" text-center">
+                        <div
+                            class="company-bar d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center gap-4 gap-lg-0">
+                            <img src="./images/home/company logo/Vector.svg" alt="company Logos"
+                                class="company-img img-fluid" />
 
-                            <img src="./image/home/company logo/Vector-1.svg" alt="company Logos"
-                                class="company-img " />
+                            <img src="./images/home/company logo/Vector-1.svg" alt="company Logos"
+                                class="company-img img-fluid" />
 
-                            <img src="./image/home/company logo/Vector-2.svg" alt="company Logos"
-                                class="company-img " />
+                            <img src="./images/home/company logo/Vector-2.svg" alt="company Logos"
+                                class="company-img img-fluid" />
 
-                            <img src="./image/home/company logo/Vector-3.svg" alt="company Logos"
-                                class="company-img " />
+                            <img src="./images/home/company logo/Vector-3.svg" alt="company Logos"
+                                class="company-img img-fluid" />
 
-                            <img src="./image/home/company logo/Vector-4.svg" alt="company Logos"
-                                class="company-img " />
+                            <img src="./images/home/company logo/Vector-4.svg" alt="company Logos"
+                                class="company-img img-fluid" />
                         </div>
                     </div>
                 </div>
-            </main>
+            </div>
+
+            <!-- features  section -->
+            <div>
+                <div class="container features-section py-5">
+                    <div class="row g-4">
+                        <!-- Speakers -->
+                        <div class="col-lg-5 d-flex flex-column feature-card">
+                            <div
+                                class="feature-card-content feature-card-blue h-100  text-white rounded-5 p-4 p-md-5 d-flex flex-column justify-content-between position-relative overflow-hidden">
+                                <div>
+                                    <h2 class=" mb-4 feature-card-title ">Speakers</h2>
+                                    <div class="d-flex align-items-start gap-4 ">
+                                        <div
+                                            class="  text-black feature-icon-circle d-flex align-items-center justify-content- mt-4">
+                                            <img src="./images//home/union-1.svg" class="feature-icon">
+                                        </div>
+                                        <p class="pe-md-4 feature-card-description mt-3 ">
+                                            Hear from global AI leaders, researchers, and entrepreneurs who are
+                                            defining
+                                            the future of artificial intelligence.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mt-5">
+                                    <div class="speaker-avatars d-flex">
+                                        <img src="./images/home/home spekers icone/Image.png" alt="Speaker"
+                                            class="feature-avatar">
+                                        <img src="./images/home/home spekers icone/Image-1.png" alt="Speaker"
+                                            class="feature-avatar">
+                                        <img src="./images/home/home spekers icone/Image-2.png" alt="Speaker"
+                                            class="feature-avatar">
+                                        <img src="./images/home/home spekers icone/Image-3.png" alt="Speaker"
+                                            class="feature-avatar">
+                                    </div>
+                                    <button href="#"
+                                        class="features-section-btn btn  rounded-pill border-white text-white ">
+                                        And more <img src="./images//home/union-2.svg"
+                                            class="features-section-btn-icon">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7 d-flex flex-column gap-4 feature-card ">
+                            <!-- Technologies -->
+                            <div
+                                class="feature-card-content feature-card-blue text-white rounded-5 p-4 p-md-5 flex-grow-1">
+                                <h2 class="fw-boldfeature-card-title">Technologies</h2>
+                                <p class=" mb-0 pe-md-4 text-white feature-card-description">
+                                    Explore advanced machine learning, natural language processing, AI-driven
+                                    automation, and emerging cybersecurity applications.
+                                </p>
+                            </div>
+
+                            <!-- Networking -->
+                            <div
+                                class="feature-card-content feature-card-grey text-dark rounded-5 p-4 p-md-5 flex-grow-1">
+                                <h2 class="fw-bold feature-card-title">Networking Opportunities</h2>
+                                <p class=" mb-0 pe-md-4 text-dark feature-card-description">
+                                    Enjoy exclusive networking sessions, roundtables, and social events to
+                                    foster
+                                    collaboration and spark new partnerships.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AGENDA section -->
+                <div class="container mt-5 agenda-section">
+                    <div
+                        class="agenda-topbar d-flex flex-column align-items-start gap-3 flex-sm-row justify-content-sm-between align-items-sm-center mb-5">
+                        <span class="text-white agenda-big-font">AGENDA</span>
+                        <span class="text-white agenda-small-font ">October 15-17, 2052 | Horizon <br>
+                            Convention Center, Amsterdam</span>
+                    </div>
+                    <!-- AGENDA content -->
+                    <div class="container-fluid agenda-section-container">
+                        <div class="agenda-card">
+                            <div class="agenda-cards">
+                                <div
+                                    class="row d-flex flex-column align-items-start gap-2 flex-sm-row  justify-content-between mb-5">
+                                    <div class="agenda-left-col col-lg-4">
+                                        <div>
+                                            <div class="text-white agenda-large-font ">Day 1</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-white agenda-large-font ">09:00 – 19:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="agenda-right-col col-lg-7">
+                                        <div>
+                                            <div class="text-white agenda-large-font">AI Innovations & Trends
+                                            </div>
+                                            <div class="text-white agenda-description-font ">The summit kicks off with a
+                                                keynote, expert panels, and discussions on AI’s impact, ethics, and
+                                                automation. Hands-on workshops and a networking event wrap up the day.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="mt-5 row d-flex flex-column align-items-start gap-1 flex-sm-row  justify-content-between mb-5">
+                                    <div class="agenda-left-col col-lg-4">
+                                        <div>
+                                            <div class="text-white agenda-large-font ">Day 2</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-white agenda-large-font ">09:00 – 20:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="agenda-right-col col-lg-7">
+                                        <div>
+                                            <div class="text-white  agenda-large-font">AI Technologies &
+                                                Applications
+                                            </div>
+                                            <div class="text-white agenda-description-font ">The summit kicks off with a
+                                                keynote, expert panels, and discussions on AI’s impact, ethics, and
+                                                automation. Hands-on workshops and a networking event wrap up the day.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class=" row d-flex flex-column align-items-start gap-2 flex-sm-row  justify-content-between mb-5">
+                                    <div class="agenda-left-col col-lg-4">
+                                        <div>
+                                            <div class="text-white agenda-large-font ">Day 3</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-white agenda-large-font ">09:30 – 16:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="agenda-right-col col-lg-7">
+                                        <div>
+                                            <div class="text-white agenda-large-font">Future of AI & Networking
+                                            </div>
+                                            <div class="text-white agenda-description-font ">Dive into AI’s long-term
+                                                impact, attend expert-led workshops, and watch the startup pitch
+                                                competition. The event closes with a visionary keynote and final
+                                                networking sessions.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="row d-flex flex-column align-items-start gap-2 flex-sm-row justify-content-sm-between justify-content-between">
+                                    <div class="col-lg-4 position-relative agenda-image">
+                                        <img src="./images/Agenda/Mark.svg">
+                                    </div>
+                                    <div class="col-lg-7 ">
+                                        <button href="#" class="agenda-btn">
+                                            View detailed schedule
+                                            <i class="bi bi-arrow-up-right ms-2"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container mt-5 agenda-section">
+                        <div
+                            class="agenda-topbar d-flex flex-column align-items-start gap-3 flex-sm-row justify-content-sm-between align-items-sm-center mb-5">
+                            <span class="text-white agenda-big-font">KEYNOTE
+                                SPEAKERS</span>
+                            <span class="text-white agenda-small-font ">October 15-17, 2052 | Horizon <br>
+                                Convention Center, Amsterdam</span>
+                        </div>
+                        <!-- AGENDA content -->
+                    </div>
+                </div>
+        </main>
         </Section>
 
         <!-- footer section -->
@@ -165,7 +334,7 @@
                             <p class="text-white-50 small mb-4 fs-5">
                                 Subscribe for event updates & exclusive content.
                             </p>
-                            <div class="mt-5">
+                            <div class="mt-5 hero-btn-div">
                                 <form class="d-flex flex-column align-items-start  ">
                                     <input type="email" class="footer-input footer-text mb-4 w-100" placeholder="Email"
                                         required />
