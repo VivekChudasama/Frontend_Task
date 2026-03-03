@@ -40,6 +40,21 @@ body {
 }
 
 /* main */
+
+/* section topbar font */
+.section-Title-big-font {
+  font-size: 100px;
+  margin: 30px 0 30px 0;
+}
+
+.section-Title-small-font {
+  font-size: 20px;
+}
+
+.right-section {
+  max-width: 300px;
+}
+
 /* home */
 
 .hero-section-container {
@@ -105,6 +120,7 @@ body {
 
 
 /* features */
+
 .features-section .feature-card .feature-card-blue {
   background-color: var(--primary-blue);
 }
@@ -149,7 +165,6 @@ body {
   padding: 15px 30px;
 }
 
-
 .features-section .feature-card-content .features-section-btn .features-section-btn-icon {
   padding: 0 0 0 10px;
 }
@@ -158,15 +173,6 @@ body {
 
 .agenda-section .agenda-section-container .agenda-card .agenda-cards {
   padding: 120px 80px;
-}
-
-.agenda-section .agenda-topbar .agenda-big-font {
-  font-size: 100px;
-  margin: 30px 0 30px 0;
-}
-
-.agenda-section .agenda-topbar .agenda-small-font {
-  font-size: 20px;
 }
 
 .agenda-section .agenda-section-container .agenda-cards .agenda-large-font {
@@ -182,8 +188,10 @@ body {
 .agenda-section .agenda-section-container .agenda-card {
   background-color: var(--secondary-blue);
   border-radius: 50px;
+  z-index: 100;
 }
-.agenda-section .agenda-section-container .agenda-image{
+
+.agenda-section .agenda-section-container .agenda-image {
   max-width: 386px;
   max-height: 386px;
   margin: 0 0 -120px -79px;
@@ -191,9 +199,7 @@ body {
   z-index: 0;
 }
 
-.agenda-section .agenda-section-container .agenda-card{
-  z-index: 100;
-}
+
 .agenda-section .agenda-section-container .agenda-btn {
   text-decoration: none;
   border-radius: 50px;
@@ -209,6 +215,163 @@ body {
   padding: 20px;
 }
 
+/* speakers section  */
+.speakers-section .speaker-card.text-card {
+  background-color: var(--secondary-grey);
+}
+
+.speakers-section .speaker-card {
+  min-height: 380px;
+  border-radius: 50px;
+
+}
+
+.speakers-section .speaker-card .speaker-name {
+  font-size: 30px;
+  padding: 50px;
+}
+
+.speakers-section .speaker-card .speaker-role {
+  font-size: 20px;
+  color: var(--secondary-dark);
+  padding: 50px;
+}
+
+.speakers-section .image-card .speaker-card-image {
+  filter: grayscale(1);
+}
+
+.speakers-section .image-card .speaker-card-image:hover {
+  filter: grayscale(0);
+}
+
+/* why attend section */
+.attend-section .attend-section-content {
+  background-color: var(--secondary-blue);
+  border-radius: 50px;
+  padding: 30px 50px 50px 50px !important;
+
+}
+
+.attend-section .attend-section-content .attend-section-title {
+  font-size: 20px;
+}
+
+.attend-section .attend-section-content .attend-section-description {
+  font-size: 18px;
+}
+
+.attend-section .attend-section-content .attend-section-img {
+  max-width: 274px;
+  max-height: 360px;
+}
+
+.attend-section {
+  z-index: 100;
+}
+
+
+.attend-section-img .attend-section-img-start {
+  margin: 0 0 -168px -30px;
+}
+
+.attend-section-img-end {
+  margin: 0 0 -168px -30px;
+}
+
+/* attendes Carousel */
+
+
+/* register now */
+.register-section .register-section-container {
+  background-color: var(--secondary-blue);
+  border-radius: 50px;
+  padding: 100px;
+}
+
+.register-section .register-section-container .register-card .register-top-text {
+  font-size: 20px;
+}
+
+.register-section .register-section-container .register-card .register-middel-text {
+  font-size: 200px;
+  margin: -80px 0 0 0;
+}
+
+.register-section .register-section-container .register-card .register-bottom-text {
+  font-size: 16px;
+  padding-left: 120px;
+  padding-top: -80px;
+}
+
+.register-section {
+  position: relative;
+  z-index: 1000;
+}
+
+.register-image {
+  max-width: 386px;
+  max-height: 386px;
+  margin: 0 0 -250px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+/* ticket-section */
+
+.Ticket-section .Ticket-card {
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 80px 60px 40px 60px;
+}
+
+.Ticket-section .Ticket-card.active {
+  background-color: var(--primary-blue);
+}
+
+.Ticket-section .Ticket-card:hover {
+  transition: 0.5s all;
+  background-color: var(--primary-blue);
+}
+
+.Ticket-section .Ticket-card .ticket-title {
+  font-size: 26px;
+  font-weight: var(--font-weight-bold);
+}
+
+.Ticket-section .Ticket-card .ticket-description {
+  margin: 20px 0 0 0;
+  font-size: 20px;
+}
+
+.Ticket-section .Ticket-card .ticket-price {
+  font-size: 50px;
+  font-weight: var(--font-weight-bold);
+  margin: 60px 0 0 0;
+}
+
+.Ticket-section .Ticket-card .Ticket-btn {
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 22px 55px;
+  font-size: 22px;
+  color: var(--primary-white);
+  background: #0147ff;
+  background: linear-gradient(49deg,
+      rgba(1, 71, 255, 1) 0%,
+      rgba(6, 32, 117, 1) 92%);
+  margin: 40px 0 0 0;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.ticket-price-space {
+  padding: 30px 0 0 0;
+}
+
+.ticket-price-space2 {
+  padding: 80px 0 0 0;
+}
 
 /* footer */
 
@@ -279,13 +442,14 @@ body {
 
 @media (min-width: 1025px) {
   .on-big-screen {
-    margin: 0 200px;
+    max-width: 1320px;
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 991px) {
+@media (min-width :576px) and (max-width: 1023px) {
   .hero-section-container .hero-card .hero-content .hero-custom-font {
-    font-size:50px;
+    font-size: 50px;
   }
 
   .hero-section-container .hero-card .hero-content .hero-btn {
@@ -301,11 +465,33 @@ body {
     margin: 40px 0 0 300px;
     max-width: 350px;
   }
+
+  .attend-section-img {
+    display: none;
+  }
+
+  .attend-section .attend-section-content-gap {
+    margin-top: 25px;
+  }
+
+  .hero-section-container .hero-card .hero-content .hero-star-img {
+    max-width: 300px;
+    margin: 100px 10px 50px 350px;
+  }
+
+  .agenda-section .agenda-section-container .agenda-image {
+    margin-bottom: -127px;
+  }
+
+  .agenda-section .agenda-section-container .agenda-btn {
+    margin-top: -230px;
+  }
+
 }
 
-@media ( min-width :1024px ) and (  max-width: 1136px) {
+@media (min-width :1024px) and (max-width: 1136px) {
   .hero-section-container .hero-card .hero-content .hero-custom-font {
-    font-size:70px;
+    font-size: 70px;
   }
 
   .hero-section-container .hero-card .hero-content .hero-btn {
@@ -329,6 +515,15 @@ body {
     margin: 0 15px;
   }
 
+  .section-Title-big-font {
+    font-size: 50px;
+    margin: 30px 0 30px 0;
+  }
+
+  .section-Title-small-font {
+    font-size: 16px;
+  }
+
   .nav-bar .nav-bar-content.nav-logo {
     max-width: 110px;
   }
@@ -346,11 +541,8 @@ body {
     font-size: 45px;
   }
 
-
   .hero-section-container .hero-card .hero-content .hero-star-img {
     display: none;
-    /* max-width: 250px;
-    margin: 20px auto 0; */
   }
 
   .hero-section-container .hero-card .hero-content .hero-btn-div .hero-btn {
@@ -398,11 +590,6 @@ body {
     padding: 80px 40px;
   }
 
-  .agenda-section .agenda-topbar .agenda-big-font {
-    font-size: 50px;
-    margin: 15px 0 30px 0;
-  }
-
   .agenda-section .agenda-section-container .agenda-cards .agenda-description-font {
     font-size: 16px;
     margin: 15px 0 50px 0;
@@ -413,17 +600,47 @@ body {
     font-weight: var(--font-weight-bold);
   }
 
-  .agenda-section .agenda-section-container .agenda-image{
-display: none;
-}
+  .agenda-section .agenda-section-container .agenda-image {
+    display: none;
+  }
 
 
   .agenda-section .agenda-section-container .agenda-btn {
     font-size: 18px;
   }
 
+  .attend-section .attend-section-content .attend-section-img {
+    display: none;
+  }
 
-  .footer-gray {
+  .attend-section .attend-section-content-gap {
+    margin-top: 25px;
+  }
+
+  .register-section .register-section-container {
+    padding: 20px;
+  }
+
+  .register-section .register-section-container .register-card .register-top-text {
+    font-size: 20px;
+  }
+
+  .register-section .register-section-container .register-card .register-middel-text {
+    font-size: 60px;
+    margin: 10px 0 0 0;
+  }
+
+  .register-section .register-section-container .register-card .register-bottom-text {
+    font-size: 16px;
+  }
+
+  .Ticket-section .Ticket-card .Ticket-btn {
+    font-size: 18px;
+    padding: 11px 20px;
+    margin: 40px 30px 0 0;
+  }
+
+  F .footer-gray {
     padding: 40px 30px 30px 35px;
   }
 
