@@ -83,9 +83,11 @@ body {
   font-size: 22px;
   color: var(--primary-white);
   background: #0147ff;
-  background: linear-gradient(49deg,
-      rgba(1, 71, 255, 1) 0%,
-      rgba(6, 32, 117, 1) 92%);
+  background: linear-gradient(
+    49deg,
+    rgba(1, 71, 255, 1) 0%,
+    rgba(6, 32, 117, 1) 92%
+  );
   margin: 40px 0 0 0;
   display: inline-block;
   white-space: nowrap;
@@ -118,7 +120,6 @@ body {
   max-height: 48px;
 }
 
-
 /* features */
 
 .features-section .feature-card .feature-card-blue {
@@ -135,7 +136,7 @@ body {
 
 .features-section .feature-card-content .feature-card-description {
   font-size: 18px;
-  margin: 50px 0 0 0
+  margin: 50px 0 0 0;
 }
 
 .features-section .feature-card-content .feature-icon {
@@ -165,7 +166,10 @@ body {
   padding: 15px 30px;
 }
 
-.features-section .feature-card-content .features-section-btn .features-section-btn-icon {
+.features-section
+  .feature-card-content
+  .features-section-btn
+  .features-section-btn-icon {
   padding: 0 0 0 10px;
 }
 
@@ -180,7 +184,10 @@ body {
   font-weight: var(--font-weight-bold);
 }
 
-.agenda-section .agenda-section-container .agenda-cards .agenda-description-font {
+.agenda-section
+  .agenda-section-container
+  .agenda-cards
+  .agenda-description-font {
   font-size: 20px;
   margin: 30px 0 110px 0;
 }
@@ -199,7 +206,6 @@ body {
   z-index: 0;
 }
 
-
 .agenda-section .agenda-section-container .agenda-btn {
   text-decoration: none;
   border-radius: 50px;
@@ -207,9 +213,11 @@ body {
   font-size: 25px;
   color: var(--primary-white);
   background: #0147ff;
-  background: linear-gradient(49deg,
-      rgba(1, 71, 255, 1) 0%,
-      rgba(6, 32, 117, 1) 92%);
+  background: linear-gradient(
+    49deg,
+    rgba(1, 71, 255, 1) 0%,
+    rgba(6, 32, 117, 1) 92%
+  );
   display: block;
   width: 100%;
   padding: 20px;
@@ -223,7 +231,6 @@ body {
 .speakers-section .speaker-card {
   min-height: 380px;
   border-radius: 50px;
-
 }
 
 .speakers-section .speaker-card .speaker-name {
@@ -242,136 +249,176 @@ body {
 }
 
 .speakers-section .image-card .speaker-card-image:hover {
+  transition: 1s ease-out;
   filter: grayscale(0);
 }
 
 /* why attend section */
-.attend-section .attend-section-content {
-  background-color: var(--secondary-blue);
-  border-radius: 50px;
-  padding: 30px 50px 50px 50px !important;
-
-}
-
-.attend-section .attend-section-content .attend-section-title {
-  font-size: 20px;
-}
-
-.attend-section .attend-section-content .attend-section-description {
-  font-size: 18px;
-}
-
-.attend-section .attend-section-content .attend-section-img {
-  max-width: 274px;
-  max-height: 360px;
-}
-
 .attend-section {
   z-index: 100;
+  position: relative;
 }
 
-
-.attend-section-img .attend-section-img-start {
-  margin: 0 0 -168px -30px;
+.attend-section-content {
+  background-color: #1c1c1c;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.attend-section-img-end {
-  margin: 0 0 -168px -30px;
+.attend-section-title {
+  font-size: 20px;
+  font-weight: var(--font-weight-normal);
+}
+
+.attend-section-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #c9c9c9 !important;
+}
+
+.attend-image-left {
+  bottom: clamp(-20px, -2vw, -10px);
+  left: clamp(-20px, -2vw, -10px);
+  opacity: 0.95;
+}
+
+.attend-image-right {
+  bottom: clamp(-20px, -2vw, -10px);
+  right: clamp(-20px, -2vw, -10px);
+  opacity: 0.95;
 }
 
 /* attendes Carousel */
 
-
 /* register now */
-.register-section .register-section-container {
-  background-color: var(--secondary-blue);
-  border-radius: 50px;
-  padding: 100px;
-}
-
-.register-section .register-section-container .register-card .register-top-text {
-  font-size: 20px;
-}
-
-.register-section .register-section-container .register-card .register-middel-text {
-  font-size: 200px;
-  margin: -80px 0 0 0;
-}
-
-.register-section .register-section-container .register-card .register-bottom-text {
-  font-size: 16px;
-  padding-left: 120px;
-  padding-top: -80px;
-}
-
 .register-section {
   position: relative;
-  z-index: 1000;
+  z-index: 100;
+}
+
+.register-section-container {
+  background-color: var(--secondary-blue);
+  border-radius: 50px;
+  padding: 80px 80px 100px 80px;
+}
+
+.register-top-text {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.time-wrapper {
+  gap: clamp(5px, 2vw, 25px);
+}
+
+.register-number {
+  font-size: clamp(60px, 12vw, 180px);
+  font-weight: 500;
+  line-height: 0.9;
+}
+
+.register-colon {
+  font-size: clamp(50px, 11vw, 160px);
+  font-weight: 400;
+  line-height: 0.85;
+  margin-top: -3px;
+}
+
+.register-label {
+  font-size: clamp(12px, 2vw, 18px);
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: clamp(10px, 2vw, 25px);
+  text-transform: uppercase;
+}
+
+.register-image-container {
+  transform: translate(25%, 35%);
+  z-index: 0;
 }
 
 .register-image {
-  max-width: 386px;
-  max-height: 386px;
-  margin: 0 0 -250px 0;
-  position: absolute;
-  z-index: 1;
+  max-width: 650px;
+  width: 100%;
 }
 
 /* ticket-section */
+.Ticket-section .ticket-main-title {
+  font-size: 45px;
+  font-weight: var(--font-weight-bold);
+}
 
 .Ticket-section .Ticket-card {
-  border: 2px solid white;
-  border-radius: 50px;
-  padding: 80px 60px 40px 60px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 35px;
+  padding: 50px 40px 40px 40px;
+  transition: 0.4s all;
+  background-color: transparent;
 }
 
 .Ticket-section .Ticket-card.active {
   background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
 }
 
 .Ticket-section .Ticket-card:hover {
-  transition: 0.5s all;
   background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
 }
 
 .Ticket-section .Ticket-card .ticket-title {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .Ticket-section .Ticket-card .ticket-description {
-  margin: 20px 0 0 0;
-  font-size: 20px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+
+.Ticket-section .Ticket-card.active .ticket-description {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.Ticket-section .Ticket-card:hover .ticket-description {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .Ticket-section .Ticket-card .ticket-price {
-  font-size: 50px;
+  font-size: 55px;
   font-weight: var(--font-weight-bold);
-  margin: 60px 0 0 0;
+  margin: 30px 0;
 }
 
 .Ticket-section .Ticket-card .Ticket-btn {
   text-decoration: none;
   border-radius: 50px;
-  padding: 22px 55px;
-  font-size: 22px;
+  padding: 16px 30px;
+  font-size: 18px;
   color: var(--primary-white);
-  background: #0147ff;
-  background: linear-gradient(49deg,
-      rgba(1, 71, 255, 1) 0%,
-      rgba(6, 32, 117, 1) 92%);
-  margin: 40px 0 0 0;
-  display: inline-block;
+  background: var(--primary-blue);
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   white-space: nowrap;
+  transition: 0.3s all;
 }
 
-.ticket-price-space {
-  padding: 30px 0 0 0;
+.Ticket-section .Ticket-card.active .Ticket-btn {
+  background: #e2e2e2;
+  color: var(--secondary-dark);
 }
 
-.ticket-price-space2 {
-  padding: 80px 0 0 0;
+.Ticket-section .Ticket-card:hover .Ticket-btn {
+  background: #e2e2e2;
+  color: var(--secondary-dark);
 }
+
+/* connect */
 
 /* footer */
 
@@ -419,7 +466,6 @@ body {
   color: var(--primary-white);
 }
 
-
 /* media queary */
 
 @media (min-width: 992px) {
@@ -447,7 +493,7 @@ body {
   }
 }
 
-@media (min-width :576px) and (max-width: 1023px) {
+@media (min-width: 576px) and (max-width: 1023px) {
   .hero-section-container .hero-card .hero-content .hero-custom-font {
     font-size: 50px;
   }
@@ -459,11 +505,14 @@ body {
 
   .hero-section-container .hero-card .hero-content .hero-star-img {
     position: absolute;
-    right: auto;
+    right: 0;
     top: auto;
+    bottom: -80px;
     display: block;
-    margin: 40px 0 0 300px;
+    margin: 0;
     max-width: 350px;
+    opacity: 0.8;
+    z-index: 0;
   }
 
   .attend-section-img {
@@ -486,10 +535,9 @@ body {
   .agenda-section .agenda-section-container .agenda-btn {
     margin-top: -230px;
   }
-
 }
 
-@media (min-width :1024px) and (max-width: 1136px) {
+@media (min-width: 1024px) and (max-width: 1136px) {
   .hero-section-container .hero-card .hero-content .hero-custom-font {
     font-size: 70px;
   }
@@ -508,7 +556,6 @@ body {
     max-width: 350px;
   }
 }
-
 
 @media (max-width: 575px) {
   body {
@@ -545,8 +592,13 @@ body {
     display: none;
   }
 
+  .hero-section-container .hero-card .hero-content .hero-btn {
+    font-size: 20px;
+    padding: 22px 30px;
+  }
+
   .hero-section-container .hero-card .hero-content .hero-btn-div .hero-btn {
-    margin: 100px 0 !important;
+    margin: 50px 0 !important;
   }
 
   .features-section .feature-card-content .feature-card-title {
@@ -590,7 +642,10 @@ body {
     padding: 80px 40px;
   }
 
-  .agenda-section .agenda-section-container .agenda-cards .agenda-description-font {
+  .agenda-section
+    .agenda-section-container
+    .agenda-cards
+    .agenda-description-font {
     font-size: 16px;
     margin: 15px 0 50px 0;
   }
@@ -604,43 +659,55 @@ body {
     display: none;
   }
 
-
   .agenda-section .agenda-section-container .agenda-btn {
     font-size: 18px;
   }
 
-  .attend-section .attend-section-content .attend-section-img {
-    display: none;
+  .attend-section-content {
+    padding: 30px 20px !important;
   }
 
-  .attend-section .attend-section-content-gap {
-    margin-top: 25px;
+  .attend-section-description.text-lg-end {
+    text-align: left !important;
   }
 
-  .register-section .register-section-container {
-    padding: 20px;
+  .register-section-container {
+    padding: 40px 20px;
+    border-radius: 30px;
   }
 
-  .register-section .register-section-container .register-card .register-top-text {
-    font-size: 20px;
-  }
-
-  .register-section .register-section-container .register-card .register-middel-text {
-    font-size: 60px;
-    margin: 10px 0 0 0;
-  }
-
-  .register-section .register-section-container .register-card .register-bottom-text {
+  .register-top-text {
     font-size: 16px;
   }
 
-  .Ticket-section .Ticket-card .Ticket-btn {
-    font-size: 18px;
-    padding: 11px 20px;
-    margin: 40px 30px 0 0;
+  .register-image-container {
+    transform: translate(20%, 20%);
   }
 
-  F .footer-gray {
+  .register-image {
+    max-width: 250px;
+  }
+
+  .Ticket-section .ticket-main-title {
+    font-size: 35px;
+  }
+
+  .Ticket-section .Ticket-card {
+    padding: 35px 25px 30px 25px;
+  }
+
+  .Ticket-section .Ticket-card .ticket-price {
+    font-size: 45px;
+    margin: 20px 0;
+  }
+
+  .Ticket-section .Ticket-card .Ticket-btn {
+    font-size: 16px;
+    padding: 12px 15px;
+    margin: 0;
+  }
+
+  .footer-gray {
     padding: 40px 30px 30px 35px;
   }
 
