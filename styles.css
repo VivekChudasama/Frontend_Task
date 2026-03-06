@@ -11,6 +11,7 @@
   --font: Syne;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
+  --border-radius :50px;
 }
 
 body {
@@ -30,7 +31,6 @@ body {
   transition: all 0.3s ease;
   box-sizing: border-box;
   border: 1px solid transparent;
-  border-radius: 50px;
   padding: 8px 24px !important;
 }
 
@@ -41,6 +41,7 @@ body {
 
 /* main */
 
+/* re-usable - classes */
 /* section topbar font */
 .section-Title-big-font {
   font-size: 100px;
@@ -56,11 +57,15 @@ body {
   max-width: 300px;
 }
 
+.custom-radius
+{
+  border-radius: var(--border-radius)
+}
+
 /* home */
 
 .hero-section-container {
   background-color: var(--secondary-blue);
-  border-radius: 50px;
 }
 
 .hero-section-container .hero-card {
@@ -72,14 +77,13 @@ body {
   font-weight: var(--font-weight-normal);
 }
 
-.hero-section-container .hero-card .hero-content .hero-custom-font {
+.hero-section-container .hero-card .hero-content .hero-title {
   font-size: 100px;
   line-height: 1.2;
 }
 
 .hero-section-container .hero-card .hero-content .hero-btn {
   text-decoration: none;
-  border-radius: 50px;
   padding: 22px 55px;
   font-size: 22px;
   color: var(--primary-white);
@@ -187,7 +191,6 @@ body {
 
 .agenda-section .agenda-section-container .agenda-card {
   background-color: var(--secondary-blue);
-  border-radius: 50px;
   z-index: 100;
 }
 
@@ -201,7 +204,6 @@ body {
 
 .agenda-section .agenda-section-container .agenda-btn {
   text-decoration: none;
-  border-radius: 50px;
   border: none;
   font-size: 25px;
   color: var(--primary-white);
@@ -221,7 +223,6 @@ body {
 
 .speakers-section .speaker-card {
   min-height: 380px;
-  border-radius: 50px;
 }
 
 .speakers-section .speaker-card .speaker-name {
@@ -250,38 +251,37 @@ body {
   position: relative;
 }
 
-.attend-section-content {
+.attend-section .attend-section-content {
   background-color: #1c1c1c;
-  border-radius: 40px;
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.attend-section-title {
+.attend-section .attend-section-content .attend-section-title {
   font-size: 20px;
   font-weight: var(--font-weight-bold);
 }
 
-.attend-section-description {
+.attend-section .attend-section-content .attend-section-description {
   font-size: 18px;
   line-height: 1.6;
   color: #c9c9c9 !important;
 }
 
-.attend-image-left {
+.attend-section .attend-section-content .attend-image-left {
   bottom: -55px;
   left: -3px;
   opacity: 0.95;
   max-width: 220px;
 }
 
-.attend-image-left-2 {
+.attend-section .attend-section-content .attend-image-left-2 {
   bottom: -55px;
   left: -3px;
   opacity: 0.95;
   max-width: 260px;
 }
 
-.attend-image-right {
+.attend-section .attend-section-content .attend-image-right {
   bottom: -48px;
   right: -23px;
   opacity: 0.95;
@@ -289,6 +289,152 @@ body {
 }
 
 /* attendes Carousel */
+.attendes-carousel-title {
+  font-size: 50px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-button {
+  width: 74px;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.prev-btn {
+  background-color: transparent;
+  color: var(--primary-white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.prev-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--primary-white);
+}
+
+.next-btn {
+  background-color: var(--secondary-grey);
+  border: none;
+  color: var(--primary-blue);
+}
+
+.next-btn:hover {
+  background-color: var(--primary-white);
+  transform: scale(1.05);
+}
+
+/* --- Carousel Track --- */
+.carousel-track {
+  position: relative;
+  height: 480px;
+}
+
+.testimonial-card {
+  position: absolute;
+  top: 50%;
+  max-width: 500px;
+  height: 420px;
+  padding: 45px 62px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* --- Card  --- */
+.card-title {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 34px;
+  margin-bottom: 25px;
+}
+
+.card-text {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.attendee-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.attendee-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.attendee-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.attendee-title {
+  margin: 4px 0 0 0;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.theme-dark {
+  background-color: var(--secondary-blue);
+  color: var(--secondary-grey);
+}
+
+.theme-blue {
+  background-color: var(--primary-blue);
+  color: var(--primary-white);
+}
+
+.theme-blue .card-title,
+.theme-blue .card-text,
+.theme-blue .attendee-name,
+.theme-blue .attendee-title {
+  color: var(--primary-white);
+}
+
+.theme-light {
+  background-color: var(--secondary-grey);
+  color: #111111;
+}
+
+.pos-left {
+  left: 46%;
+  transform: translate(-119%, -50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.pos-center {
+  left: 50%;
+  transform: translate(-52%, -50%) scale(1);
+  z-index: 3;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  pointer-events: auto;
+}
+
+.pos-right {
+  left: 50%;
+  transform: translate(52%, -50%);
+  z-index: 1;
+  width: 500px;
+  pointer-events: none;
+  border-top-right-radius: 0px ;
+  border-bottom-right-radius: 0px ;
+}
 
 /* register now */
 .register-section {
@@ -296,48 +442,46 @@ body {
   z-index: 100;
 }
 
-.register-section-container {
+.register-section .register-content .register-section-container {
   background-color: var(--secondary-blue);
-  border-radius: 50px;
   padding: 80px 80px 100px 80px;
 }
 
-.register-top-text {
+.register-section .register-content .register-section-container .register-top-text {
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--primary-white);
 }
 
-.time-wrapper {
-  gap: clamp(5px, 2vw, 25px);
+.register-section .register-content .register-section-container .time {
+  gap: 25px;
 }
 
-.register-number {
-  font-size: clamp(60px, 12vw, 180px);
+.register-section .register-content .register-section-container .register-number {
+  font-size: 180px;
   font-weight: 500;
   line-height: 0.9;
 }
 
-.register-colon {
-  font-size: clamp(50px, 11vw, 160px);
+.register-section .register-content .register-section-container .register-colon {
+  font-size: 160px;
   font-weight: 400;
   line-height: 0.85;
-  margin-top: -3px;
 }
 
-.register-label {
-  font-size: clamp(12px, 2vw, 18px);
+.register-section .register-content .register-section-container .register-label {
+  font-size: 18px;
   letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.8);
-  margin-top: clamp(10px, 2vw, 25px);
+  color: var(--primary-white);
+  margin-top: 25px;
   text-transform: uppercase;
 }
 
-.register-image-container {
+.register-section .register-content .register-section-container .register-image-container {
   transform: translate(5%, 5%);
   z-index: 0;
 }
 
-.register-image {
+.register-section .register-content .register-section-container .register-image {
   max-width: 650px;
   width: 100%;
 }
@@ -422,8 +566,7 @@ body {
 
 .connect-section .connect-section-container {
   background-color: var(--secondary-blue);
-  border-radius: 50px;
-  padding: 90px 60px 10px 60px;
+  padding: 90px 70px 10px 60px;
 }
 
 .connect-section .connect-section-container .connect-card .connect-card-content .connect-left-col .connect-section-main-title {
@@ -444,7 +587,6 @@ body {
 
 .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-grey {
   background-color: var(--secondary-grey);
-  border-radius: 50px;
   margin: 0 0 0 50px;
 }
 
@@ -472,7 +614,6 @@ body {
 
 .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-grey .connect-card-btn {
   text-decoration: none;
-  border-radius: 50px;
   padding: 16px 55px;
   font-size: 18px;
   color: var(--primary-white);
@@ -487,51 +628,48 @@ body {
 }
 
 .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
-  max-width: 1140px;
+  width: 1175px;
   margin: 0 0 50px 0;
 }
 
 /* footer */
 
-.footer-gray {
+.footer-section .footer-section-container .footer-gray {
   background-color: var(--secondary-grey);
 }
 
-.footer-blue {
+.footer-section .footer-section-container .footer-blue {
   background-color: var(--primary-blue);
 }
 
-.custom-radius {
-  border-radius: 40px;
-}
 
-.footer-text {
+.footer-section .footer-section-container .footer-text {
   color: var(--secondary-dark);
   text-decoration: none;
 }
 
-.footer-btn {
+.footer-section .footer-section-container .footer-btn {
   margin: 10px 0 0 0;
   background-color: var(--primary-white);
   border: none;
   padding: 18px 60px;
-  border-radius: 30px;
 }
 
-.footer-input {
+.footer-section .footer-section-container .footer-input {
   background-color: var(--primary-blue);
   border: none;
   border-bottom: 2px solid white;
   max-width: 600px;
 }
 
-.footer-input::placeholder {
+.footer-section .footer-section-container .footer-input::placeholder {
   color: var(--primary-white);
   font-size: 20px;
   padding: 0 0 5px 0;
 }
 
-.social-link {
+.footer-section .footer-section-container .social-link,
+.connect-section .social-link {
   margin: 10px 0 0 0;
   height: 35px;
   color: var(--primary-white);
@@ -540,53 +678,57 @@ body {
 /* media queary */
 
 @media (min-width: 992px) {
-  .footer-gray {
+  .footer-section .footer-section-container .footer-gray {
     border-radius: 50px 0 0 20px;
     padding-right: 64px !important;
     max-height: 530px;
   }
 
-  .footer-blue {
-    border-radius: 50px;
+  .footer-section .footer-section-container .footer-blue {
     position: relative;
     z-index: 10;
     margin-left: -40px;
     flex: 0 0 calc(50% + 40px);
-    max-width: calc(50% + 40px);
+    max-width: calc(50% + 100px);
     max-height: 530px;
   }
 }
 
-@media (min-width: 1023px) and (max-width: 1439px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   .on-big-screen {
     max-width: 1220px;
     margin: 0 auto;
   }
 
-  .attend-image-left {
+  .attend-section .attend-section-content .attend-image-left {
     bottom: -55px;
     left: -3px;
     opacity: 0.95;
     max-width: 180px;
   }
 
-  .attend-image-left-2 {
+  .attend-section .attend-section-content .attend-image-left-2 {
     bottom: -55px;
     left: -3px;
     opacity: 0.95;
     max-width: 220px;
   }
 
-  .attend-image-right {
+  .attend-section .attend-section-content .attend-image-right {
     bottom: -48px;
     right: -30px;
     opacity: 0.95;
     max-width: 220px;
   }
+
 }
 
-@media (min-width: 576px) and (max-width: 1023px) {
-  .hero-section-container .hero-card .hero-content .hero-custom-font {
+@media (min-width: 776px) and (max-width: 1023px) {
+  .section-Title-big-font {
+    font-size: 65px;
+  }
+
+  .hero-section-container .hero-card .hero-content .hero-title {
     font-size: 50px;
   }
 
@@ -607,10 +749,6 @@ body {
     z-index: 0;
   }
 
-  .attend-section-img {
-    display: none;
-  }
-
   .attend-section .attend-section-content-gap {
     margin-top: 25px;
   }
@@ -624,10 +762,42 @@ body {
     margin-bottom: -127px;
   }
 
+  .agenda-section .agenda-section-container .agenda-cards .agenda-description-font {
+    margin: 30px 0 70px 0;
+  }
+
   .agenda-section .agenda-section-container .agenda-btn {
     margin-top: -230px;
   }
+  
+  .nav-buttons {
+    margin-top: 15px;
+  }
+  .nav-button {
+    width: 50px;
+    height: 50px;
+  }
+  .carousel-track {
+    height: 420px;
+  }
+  .testimonial-card {
+    width: 90%;
+    max-width: 400px;
+    height: 360px;
+  }
 
+  .pos-left {
+    margin: 0 0 0 18%;
+  }
+  .pos-right {
+    margin: 0 -31%;
+    
+  }
+  .pos-center {
+    transform: translate(-50%, -50%) ;
+    width: 100%;
+  }
+  
   .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
     max-width: 585px;
     margin: 0 0 50px 0;
@@ -637,10 +807,36 @@ body {
     margin: 30px 0 0 0px;
   }
 
+  .connect-section .connect-section-container .connect-card .connect-card-content .connect-left-col .connect-section-description {
+    margin: 5px 0 0 0;
+  }
+
+  .connect-section .connect-section-container .connect-card .connect-card-content .connect-left-col .connect-section-secondary-title {
+    margin: 20px 0 0 0;
+
+  }
+
+  .register-section .register-content .register-section-container .time {
+    gap: 15px;
+  }
+
+  .register-section .register-content .register-section-container .register-number {
+    font-size: 120px;
+  }
+
+  .register-section .register-content .register-section-container .register-colon {
+    margin: 20px 0 0 0;
+    font-size: 100px;
+  }
+
+  .register-section .register-content .register-section-container .register-label {
+    font-size: 18px;
+  }
+
 }
 
-@media (min-width: 1024px) and (max-width: 1136px) {
-  .hero-section-container .hero-card .hero-content .hero-custom-font {
+@media (min-width: 1024px) and (max-width: 1281px) {
+  .hero-section-container .hero-card .hero-content .hero-title {
     font-size: 70px;
   }
 
@@ -659,12 +855,24 @@ body {
   }
 
   .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
-    max-width: 930px;
+    max-width: calc(100% + 40px);
     margin: 0 0 50px -25px;
+  }
+
+  .pos-left {
+    margin: 0 0 0 9%;
+  }
+  .pos-right {
+    margin: 0% -26%;
+  }
+  .pos-center {
+    transform: translate(-50%, -50%) ;
+    width: 100%;
   }
 }
 
-@media (max-width: 575px) {
+
+@media (max-width: 775px) {
   body {
     margin: 0 15px;
   }
@@ -688,13 +896,18 @@ body {
     transform: scale(0.8);
   }
 
+  .hero-section {
+    margin: 0 0 0 15px;
+  }
+
   .hero-section-container .hero-card {
     padding: 40px 20px;
     border-radius: 30px;
   }
 
-  .hero-section-container .hero-card .hero-content .hero-custom-font {
+  .hero-section-container .hero-card .hero-content .hero-title {
     font-size: 45px;
+    margin: 0;
   }
 
   .hero-section-container .hero-card .hero-content .hero-star-img {
@@ -707,7 +920,7 @@ body {
   }
 
   .hero-section-container .hero-card .hero-content .hero-btn-div .hero-btn {
-    margin: 50px 0 !important;
+    margin: 0 auto !important;
   }
 
   .features-section .feature-card-content .feature-card-title {
@@ -766,7 +979,8 @@ body {
   }
 
   .agenda-section .agenda-section-container .agenda-btn {
-    font-size: 18px;
+    font-size: 17px;
+    margin: 0 auto;
   }
 
   .attend-section-content {
@@ -777,42 +991,91 @@ body {
     text-align: left !important;
   }
 
-  .attend-image-left {
+  .attend-section .attend-section-content .attend-image-left {
     bottom: -30px;
     left: -3px;
     opacity: 0.95;
     max-width: 120px;
   }
 
-  .attend-image-left-2 {
+  .attend-section .attend-section-content .attend-image-left-2 {
     bottom: -30px;
     left: -8px;
     opacity: 0.95;
     max-width: 140px;
   }
 
-  .attend-image-right {
+  .attend-section .attend-section-content .attend-image-right {
     bottom: -30px;
     right: -5px;
     opacity: 0.95;
     max-width: 160px;
   }
 
-  .register-section-container {
+  .carousel-section .attendes-carousel-title {
+    font-size: 28px;
+    max-width: 100%;
+  }
+  .nav-buttons {
+    margin-top: 15px;
+  }
+  .nav-button {
+    width: 50px;
+    height: 50px;
+  }
+  .carousel-track {
+    height: 420px;
+  }
+  .testimonial-card {
+    width: 90%;
+    max-width: 360px;
+    height: 390px;
+  }
+ .pos-left {
+    transform: translate(-150%, -50%);
+    opacity: 0;
+  }
+  .pos-right {
+    margin: 0% -92%;
+    opacity: 0;
+  }
+  .pos-center {
+    transform: translate(-50%, -50%) ;
+    width: 100%;
+  }
+
+  .register-section .register-content .register-section-container {
     padding: 40px 20px;
     border-radius: 30px;
   }
 
-  .register-top-text {
-    font-size: 16px;
+  .register-section .register-content .register-section-container .register-top-text {
+    font-size: 18px;
   }
 
-  .register-image-container {
+  .register-section .register-content .register-section-container .register-image-container {
     transform: translate(40%, 40%);
   }
 
-  .register-image {
+  .register-section .register-content .register-section-container .register-image {
     max-width: 250px;
+  }
+
+  .register-section .register-content .register-section-container .time {
+    gap: 15px;
+  }
+
+  .register-section .register-content .register-section-container .register-number {
+    font-size: 60px;
+  }
+
+  .register-section .register-content .register-section-container .register-colon {
+    margin: 10px 0 0 0;
+    font-size: 50px;
+  }
+
+  .register-section .register-content .register-section-container .register-label {
+    font-size: 16px;
   }
 
   .Ticket-section .ticket-main-title {
@@ -835,7 +1098,7 @@ body {
   }
 
   .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
-    max-width: 300px;
+    max-width: calc(100% + 35px);
     margin: 0 0 50px -25px;
   }
 
@@ -845,7 +1108,6 @@ body {
 
   .connect-section .connect-section-container {
     background-color: var(--secondary-blue);
-    border-radius: 50px;
     padding: 90px 40px 10px 50px;
   }
 
@@ -863,31 +1125,37 @@ body {
   .connect-section .connect-section-container .connect-card .connect-card-content .connect-left-col .connect-section-description {
     font-size: 18px;
     margin: 5px 0 20px 0;
+    color: var(--primary-white);
   }
 
-  .footer-gray {
+  .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-grey .connect-card-btn {
+    margin: 0 auto;
+    padding: calc(0% + 20px);
+  }
+
+  .footer-section .footer-section-container .footer-gray {
     padding: 40px 30px 30px 35px;
   }
 
-  .footer-gray .row {
+  .footer-section .footer-section-container .footer-gray .row {
     flex-direction: column;
     gap: 30px;
   }
 
-  .footer-blue {
+  .footer-section .footer-section-container .footer-blue {
     padding: 0px 25px 30px 25px !important;
   }
 
-  .footer-btn {
+  .footer-section .footer-section-container .footer-btn {
     padding: 5px 10px !important;
     border-radius: 30px;
   }
 
-  .footer-text-large {
+  .footer-section .footer-section-container .footer-text-large {
     font-size: 24px;
   }
 
-  .footer-text {
+  .footer-section .footer-section-container .footer-text {
     font-size: 19px;
   }
 

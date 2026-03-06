@@ -1,23 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
-        const track = document.getElementById("carouselTrack");
-        const cards = Array.from(track.querySelectorAll(".testimonial-card"));
+  const cards = Array.from(document.querySelectorAll(".testimonial-card"));
 
-        // Define the sequence of classes
-        let classes = ["card-left", "card-center", "card-right"];
+  let positions = ["pos-left", "pos-center", "pos-right"];
 
-        function applyClasses() {
-          cards.forEach((card, index) => {
-            card.className = `testimonial-card ${classes[index]}`;
-          });
-        }
+  function updatePositions() {
+    cards.forEach((card, index) => {
+      card.classList.remove("pos-left", "pos-center", "pos-right");
+      card.classList.add(positions[index]);
+    });
+  }
 
-        document.getElementById("nextBtn").addEventListener("click", () => {
-          classes.unshift(classes.pop());
-          applyClasses();
-        });
+  document.getElementById("nextBtn").addEventListener("click", () => {
+    positions.unshift(positions.pop());
+    updatePositions();
+  });
 
-        document.getElementById("prevBtn").addEventListener("click", () => {
-          classes.push(classes.shift());
-          applyClasses();
-        });
-      });
+  document.getElementById("prevBtn").addEventListener("click", () => {
+    positions.push(positions.shift());
+    updatePositions();
+  });
+});
