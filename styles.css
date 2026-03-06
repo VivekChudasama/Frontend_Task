@@ -441,6 +441,9 @@ body {
   position: relative;
   z-index: 100;
 }
+.register-section-Title-big-font {
+  line-height: 1.2;
+}
 
 .register-section .register-content .register-section-container {
   background-color: var(--secondary-blue);
