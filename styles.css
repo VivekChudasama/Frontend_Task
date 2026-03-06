@@ -107,8 +107,8 @@ body {
 
 .hero-section-container .hero-card .hero-content .hero-star-img {
   position: absolute;
-  right: 5px;
-  top: 170px;
+  right: 100px;
+  top: 160px;
   max-height: 442.82px;
   max-width: 436.41px;
   z-index: 0;
@@ -143,8 +143,8 @@ body {
 }
 
 .features-section .feature-card-content .feature-icon {
-  max-width: 22;
-  max-width: 23;
+  max-width: 22px;
+  max-width: 23px;
 }
 
 .features-section .feature-card-content .feature-icon-circle {
@@ -289,16 +289,16 @@ body {
 }
 
 /* attendes Carousel */
-.attendes-carousel-title {
+.carousel-section .attendes-carousel-title {
   font-size: 50px;
 }
 
-.nav-buttons {
+.carousel-section .carousel-buttons {
   display: flex;
   gap: 16px;
 }
 
-.nav-button {
+.carousel-section .carousel-buttons .carousel-button {
   width: 74px;
   height: 74px;
   display: flex;
@@ -308,35 +308,35 @@ body {
   transition: all 0.3s ease;
 }
 
-.prev-btn {
+.carousel-section .carousel-buttons .prev-btn {
   background-color: transparent;
   color: var(--primary-white);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.prev-btn:hover {
+.carousel-section .carousel-buttons .prev-btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border-color: var(--primary-white);
 }
 
-.next-btn {
+.carousel-section .carousel-buttons .next-btn {
   background-color: var(--secondary-grey);
   border: none;
   color: var(--primary-blue);
 }
 
-.next-btn:hover {
+.carousel-section .carousel-buttons .next-btn:hover {
   background-color: var(--primary-white);
   transform: scale(1.05);
 }
 
 /* --- Carousel Track --- */
-.carousel-track {
+.testimonial-section .carousel-track {
   position: relative;
   height: 480px;
 }
 
-.testimonial-card {
+.testimonial-section .carousel-track .testimonial-card {
   position: absolute;
   top: 50%;
   max-width: 500px;
@@ -348,8 +348,8 @@ body {
   transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* --- Card  --- */
-.card-title {
+/* --- testimonial Card  --- */
+.testimonial-section .carousel-track .testimonial-card .card-title {
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
@@ -357,68 +357,68 @@ body {
   margin-bottom: 25px;
 }
 
-.card-text {
+.testimonial-section .carousel-track .testimonial-card .card-text {
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
 }
 
-.attendee-info {
+.testimonial-section .carousel-track .testimonial-card .attendee-info {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.attendee-avatar {
+.testimonial-section .carousel-track .testimonial-card .attendee-avatar {
   width: 52px;
   height: 52px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.attendee-name {
+.testimonial-section .carousel-track .testimonial-card .attendee-name {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
   margin: 0;
 }
 
-.attendee-title {
+.testimonial-section .carousel-track .testimonial-card .attendee-title {
   margin: 4px 0 0 0;
   font-size: 15px;
   opacity: 0.8;
 }
 
-.theme-dark {
+.testimonial-section .carousel-track .theme-dark {
   background-color: var(--secondary-blue);
   color: var(--secondary-grey);
 }
 
-.theme-blue {
+.testimonial-section .carousel-track .theme-blue {
   background-color: var(--primary-blue);
   color: var(--primary-white);
 }
 
-.theme-blue .card-title,
-.theme-blue .card-text,
-.theme-blue .attendee-name,
-.theme-blue .attendee-title {
+.testimonial-section .carousel-track .theme-blue .card-title,
+.testimonial-section .carousel-track .theme-blue .card-text,
+.testimonial-section .carousel-track .theme-blue .attendee-name,
+.testimonial-section .carousel-track .theme-blue .attendee-title {
   color: var(--primary-white);
 }
 
-.theme-light {
+.testimonial-section .carousel-track .theme-light {
   background-color: var(--secondary-grey);
   color: #111111;
 }
 
-.pos-left {
+.testimonial-section .carousel-track .pos-left {
   left: 46%;
   transform: translate(-119%, -50%);
   z-index: 1;
   pointer-events: none;
 }
 
-.pos-center {
+.testimonial-section .carousel-track .pos-center {
   left: 50%;
   transform: translate(-52%, -50%) scale(1);
   z-index: 3;
@@ -426,11 +426,11 @@ body {
   pointer-events: auto;
 }
 
-.pos-right {
+.testimonial-section .carousel-track .pos-right {
   left: 50%;
-  transform: translate(52%, -50%);
+  transform: translate(57%, -50%);
   z-index: 1;
-  width: 500px;
+  width: 450px;
   pointer-events: none;
   border-top-right-radius: 0px ;
   border-bottom-right-radius: 0px ;
@@ -453,7 +453,7 @@ body {
 }
 
 .register-section .register-content .register-section-container .time {
-  gap: 25px;
+  gap: 2px;
 }
 
 .register-section .register-content .register-section-container .register-number {
@@ -463,21 +463,20 @@ body {
 }
 
 .register-section .register-content .register-section-container .register-colon {
-  font-size: 160px;
+  font-size: 200px;
   font-weight: 400;
   line-height: 0.85;
 }
 
 .register-section .register-content .register-section-container .register-label {
   font-size: 18px;
-  letter-spacing: 1px;
   color: var(--primary-white);
   margin-top: 25px;
   text-transform: uppercase;
 }
 
 .register-section .register-content .register-section-container .register-image-container {
-  transform: translate(5%, 5%);
+  transform: translate(0%, 5%);
   z-index: 0;
 }
 
@@ -493,7 +492,7 @@ body {
 }
 
 .Ticket-section .Ticket-card {
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid var(--primary-white);
   border-radius: 35px;
   padding: 50px 40px 40px 40px;
   transition: 0.4s all;
@@ -511,28 +510,28 @@ body {
 }
 
 .Ticket-section .Ticket-card .ticket-title {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   margin-bottom: 30px;
 }
 
 .Ticket-section .Ticket-card .ticket-description {
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  color: var(--primary-white);
   margin-bottom: 20px;
 }
 
 .Ticket-section .Ticket-card.active .ticket-description {
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--primary-white);
 }
 
 .Ticket-section .Ticket-card:hover .ticket-description {
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--primary-white);
 }
 
 .Ticket-section .Ticket-card .ticket-price {
-  font-size: 55px;
+  font-size: 50px;
   font-weight: var(--font-weight-bold);
   margin: 30px 0;
 }
@@ -540,8 +539,8 @@ body {
 .Ticket-section .Ticket-card .Ticket-btn {
   text-decoration: none;
   border-radius: 50px;
-  padding: 16px 30px;
-  font-size: 18px;
+  padding: 22px 10px;
+  font-size: 25px;
   color: var(--primary-white);
   background: var(--primary-blue);
   border: none;
@@ -694,9 +693,9 @@ body {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) and (max-width: 1539px) {
   .on-big-screen {
-    max-width: 1220px;
+    max-width: 1250px;
     margin: 0 auto;
   }
 
@@ -770,30 +769,30 @@ body {
     margin-top: -230px;
   }
   
-  .nav-buttons {
+  .carousel-section .carousel-buttons {
     margin-top: 15px;
   }
-  .nav-button {
+.carousel-section .carousel-buttons .carousel-button {
     width: 50px;
     height: 50px;
   }
-  .carousel-track {
+  .testimonial-section .carousel-track {
     height: 420px;
   }
-  .testimonial-card {
+  .testimonial-section .carousel-track .testimonial-card {
     width: 90%;
     max-width: 400px;
     height: 360px;
   }
 
-  .pos-left {
+  .testimonial-section .carousel-track .pos-left {
     margin: 0 0 0 18%;
   }
-  .pos-right {
+  .testimonial-section .carousel-track .pos-right {
     margin: 0 -31%;
     
   }
-  .pos-center {
+  .testimonial-section .carousel-track .pos-center {
     transform: translate(-50%, -50%) ;
     width: 100%;
   }
@@ -859,13 +858,13 @@ body {
     margin: 0 0 50px -25px;
   }
 
-  .pos-left {
+  .testimonial-section .carousel-track .pos-left {
     margin: 0 0 0 9%;
   }
-  .pos-right {
+  .testimonial-section .carousel-track .pos-right {
     margin: 0% -26%;
   }
-  .pos-center {
+  .testimonial-section .carousel-track.pos-center {
     transform: translate(-50%, -50%) ;
     width: 100%;
   }
@@ -874,7 +873,7 @@ body {
 
 @media (max-width: 775px) {
   body {
-    margin: 0 15px;
+    margin: 0 10px 0 10px;
   }
 
   .section-Title-big-font {
@@ -897,7 +896,7 @@ body {
   }
 
   .hero-section {
-    margin: 0 0 0 15px;
+    margin: 0 10px 0 10px;
   }
 
   .hero-section-container .hero-card {
@@ -995,51 +994,51 @@ body {
     bottom: -30px;
     left: -3px;
     opacity: 0.95;
-    max-width: 120px;
+    max-width: 110px;
   }
 
   .attend-section .attend-section-content .attend-image-left-2 {
     bottom: -30px;
-    left: -8px;
+    left: -18px;
     opacity: 0.95;
-    max-width: 140px;
+    max-width: 130px;
   }
 
   .attend-section .attend-section-content .attend-image-right {
     bottom: -30px;
     right: -5px;
     opacity: 0.95;
-    max-width: 160px;
+    max-width: 150px;
   }
 
   .carousel-section .attendes-carousel-title {
     font-size: 28px;
     max-width: 100%;
   }
-  .nav-buttons {
+  .carousel-section .carousel-buttons {
     margin-top: 15px;
   }
-  .nav-button {
+  .carousel-section .carousel-buttons .carousel-button {
     width: 50px;
     height: 50px;
   }
-  .carousel-track {
+  .testimonial-section .carousel-track {
     height: 420px;
   }
-  .testimonial-card {
+  .testimonial-section .carousel-track .testimonial-card {
     width: 90%;
     max-width: 360px;
     height: 390px;
   }
- .pos-left {
+ .testimonial-section .carousel-track .pos-left {
     transform: translate(-150%, -50%);
     opacity: 0;
   }
-  .pos-right {
+  .testimonial-section .carousel-track .pos-right {
     margin: 0% -92%;
     opacity: 0;
   }
-  .pos-center {
+  .testimonial-section .carousel-track .pos-center {
     transform: translate(-50%, -50%) ;
     width: 100%;
   }
