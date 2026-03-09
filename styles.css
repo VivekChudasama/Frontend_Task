@@ -734,7 +734,7 @@ body {
     margin-left: 50px !important;
   }
   .on-big-screen {
-    max-width: calc(100% - 360px) !important;
+    max-width: calc(100% - 300px) !important;
   }
 
   .testimonial-section .carousel-track .pos-left {
