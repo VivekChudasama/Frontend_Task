@@ -13,10 +13,11 @@
 <body>
     <div>
         <!-- header section -->
-        <header class="py-2 on-big-screen ">
+        <header class="py-2 container-fluid">
             <nav class="navbar navbar-expand-lg nav-bar">
-                <div class="container nav-bar-content">
-                    <a class="navbar-brand" href="#"><img src="./images/logo/nexus.svg" class="nav-logo" loading="eager"></a>
+                <div class="container nav-bar-content on-big-screen">
+                    <a class="navbar-brand" href="#"><img src="./images/logo/nexus.svg" class="nav-logo"
+                            loading="eager"></a>
 
                     <button class="navbar-toggler border-white border-opacity-50" type="button"
                         data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
@@ -30,7 +31,7 @@
                                 data-bs-dismiss="offcanvas"></button>
                         </div>
                         <div class="offcanvas-body py-3 ">
-                            <ul class="navbar-nav ms-auto align-items-lg-center gap-1 gap-lg fs-5">
+                            <ul class="navbar-nav ms-auto align-items-lg-center gap-1 fs-5">
                                 <li class="nav-item">
                                     <a class="nav-link nav-text text-white custom-radius" href="#">Home</a>
                                 </li>
@@ -53,13 +54,13 @@
                         </div>
                     </div>
                 </div>
-            </nav>
+            </nav> 
         </header>
 
         <main>
-            <div class="on-big-screen py-3 hero-section">
+            <div class="py-3 hero-section container-fluid ">
                 <!-- home section -->
-                <div class="container hero-section-container custom-radius">
+                <div class="container hero-section-container custom-radius on-big-screen">
                     <div class="hero-card">
                         <div
                             class="hero-topbar d-flex flex-column align-items-start gap-3 flex-sm-row justify-content-sm-between align-items-sm-center mb-5">
@@ -98,8 +99,8 @@
             </div>
 
             <!-- sponsors -->
-            <div class="on-big-screen">
-                <div class="container company-section py-5 mt-5 mb-5">
+            <div class="container-fluid">
+                <div class="container company-section py-5 mt-5 mb-5 on-big-screen">
                     <div class=" text-center">
                         <div
                             class="company-bar d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center gap-4 gap-lg-0">
@@ -123,8 +124,8 @@
             </div>
 
             <!-- features  section -->
-            <div>
-                <div class="container features-section py-5">
+            <div class="container-fluid">
+                <div class="container features-section py-5 on-big-screen">
                     <div class="row g-4">
                         <!-- Speakers -->
                         <div class="col-lg-5 d-flex flex-column feature-card">
@@ -157,8 +158,8 @@
                                     </div>
                                     <button href="#"
                                         class="features-section-btn btn  rounded-pill border-white text-white ">
-                                        And more <img src="./images//home/union-2.svg"
-                                            class="features-section-btn-icon" loading="lazy">
+                                        And more <img src="./images//home/union-2.svg" class="features-section-btn-icon"
+                                            loading="lazy">
                                     </button>
                                 </div>
                             </div>
@@ -168,7 +169,7 @@
                             <!-- Technologies -->
                             <div
                                 class="feature-card-content feature-card-blue text-white rounded-5 p-4 p-md-5 flex-grow-1">
-                                <h2 class="fw-boldfeature-card-title">Technologies</h2>
+                                <h2 class="fw-bold feature-card-title">Technologies</h2>
                                 <p class=" mb-0 pe-md-4 text-white feature-card-description">
                                     Explore advanced machine learning, natural language processing, AI-driven
                                     automation, and emerging cybersecurity applications.
@@ -190,7 +191,7 @@
                 </div>
 
                 <!-- AGENDA section -->
-                <div class="container mt-5 agenda-section on-big-screen">
+                <div class="container mt-lg-5 agenda-section on-big-screen">
                     <div
                         class="section-topbar d-flex flex-column align-items-start gap-3 flex-sm-row justify-content-sm-between align-items-sm-center mb-5">
                         <span class="text-white section-Title-big-font">AGENDA</span>
@@ -293,10 +294,11 @@
                             industry leaders shaping the future of AI.</span>
                     </div>
 
-                    <div class="row g-4 mb-5 pb-5">
+                    <div class="row g-4 mb-5 pb-5 py-5 mt-lg-5">
                         <!-- Card 1 -->
                         <div class="col-md-6 col-lg-3">
-                            <div class="speaker-card custom-radius text-card p-xl-4 d-flex flex-column justify-content-between h-100">
+                            <div
+                                class="speaker-card custom-radius text-card p-xl-4 d-flex flex-column justify-content-between h-100">
                                 <div>
                                     <h3 class="speaker-name text-dark fw-bold mb-1">Dr. Emily<br>Carter</h3>
                                 </div>
@@ -340,7 +342,8 @@
                         </div>
                         <!-- Card 6 -->
                         <div class="col-md-6 col-lg-3">
-                            <div class="speaker-card custom-radius text-card p-xl-4 d-flex flex-column justify-content-between h-100">
+                            <div
+                                class="speaker-card custom-radius text-card p-xl-4 d-flex flex-column justify-content-between h-100">
                                 <div>
                                     <h3 class="speaker-name text-dark fw-bold mb-1">Laura Kim</h3>
                                 </div>
@@ -358,7 +361,8 @@
                         </div>
                         <!-- Card 8 -->
                         <div class="col-md-6 col-lg-3">
-                            <div class="speaker-card custom-radius text-card p-xl-4 d-flex flex-column justify-content-between h-100">
+                            <div
+                                class="speaker-card custom-radius text-card p-xl-4 d-flex flex-column justify-content-between h-100">
                                 <div>
                                     <h3 class="speaker-name text-dark fw-bold mb-1">Dr. Alan<br>Foster</h3>
                                 </div>
@@ -491,7 +495,7 @@
                     </div>
                 </div>
 
-                <div class="testimonial-section w-100">
+                <div class="testimonial-section w-100 on-big-screen">
                     <div class="carousel-track" id="carouselTrack">
                         <div class="testimonial-card custom-radius theme-blue pos-center">
                             <div>
@@ -502,7 +506,8 @@
                                 </p>
                             </div>
                             <div class="attendee-info">
-                                <img src="./images/attendes corosol/Image.svg" alt="Attendee" loading="lazy" class="attendee-avatar" />
+                                <img src="./images/attendes corosol/Image.svg" alt="Attendee" loading="lazy"
+                                    class="attendee-avatar" />
                                 <div>
                                     <p class="attendee-name">Elena Rojas</p>
                                     <p class="attendee-title">AI Researcher, DeepMind</p>
@@ -550,8 +555,9 @@
                 <div class="container mt-5 register-section on-big-screen">
                     <div
                         class="pt-5 mt-5 d-flex flex-column align-items-start gap-4 flex-sm-row justify-content-sm-between align-items-sm-start ">
-                        <span class="text-white section-Title-big-font w-50 register-section-Title-big-font ">REGISTER NOW</span>
-                        <span class="text-white section-Title-small-font pt-sm-3 right-section">Secure your
+                        <span class="text-white section-Title-big-font w-50 register-section-Title-big-font ">REGISTER
+                            NOW</span>
+                        <span class="text-white section-Title-small-font pt-sm-5 right-section">Secure your
                             spot at the Next-Gen AI Summit 2052 and join the future of AI innovation.</span>
                     </div>
 
@@ -750,9 +756,9 @@
                                 </div>
                                 <!-- bottom image -->
                                 <div
-                                    class="row d-flex align-items-start flex-sm-row justify-content-sm-between justify-content-between">
+                                    class="row d-flex align-items-start flex-sm-row justify-content-sm-between justify-content-between on-big-screen">
                                     <div class=" position-relative w-100">
-                                        <img src="./images/map/2980199 1.svg"  loading="lazy" class="connect-card-img">
+                                        <img src="./images/map/2980199 1.svg" loading="lazy" class="connect-card-img">
                                     </div>
                                 </div>
                             </div>
@@ -764,9 +770,9 @@
         </Section>
 
         <!-- footer section -->
-        <footer class="py-5 on-big-screen">
-            <div class="container footer-section">
-                <div class="row custom-radius overflow-hidden footer-section-container  ">
+        <footer class="py-5 container-fluid">
+            <div class="container footer-section on-big-screen">
+                <div class="row mx-0 custom-radius overflow-hidden footer-section-container  ">
                     <div class="col-lg-6 footer-gray p-auto  p-md-5 d-flex flex-column">
                         <h3 class="fw-bold fs-7 text-dark mb-4 mb-md-5 footer-text-large mt-3 ms-3">
                             Next-Gen AI Summit 2052
@@ -806,7 +812,8 @@
                                 <form class="d-flex flex-column align-items-start  ">
                                     <input type="email" class="footer-input footer-text mb-4 w-100" placeholder="Email"
                                         required />
-                                    <button type="submit" class="footer-btn custom-radius footer-text fs-5">Stay updated</button>
+                                    <button type="submit" class="footer-btn custom-radius footer-text fs-5">Stay
+                                        updated</button>
                                 </form>
                             </div>
 
