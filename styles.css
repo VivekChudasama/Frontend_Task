@@ -730,6 +730,9 @@ body {
 }
 
 @media (min-width: 1281px) {
+  body{
+    margin-left: 50px !important;
+  }
   .on-big-screen {
     max-width: calc(100% - 360px) !important;
   }
