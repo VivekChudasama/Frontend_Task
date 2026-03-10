@@ -55,7 +55,7 @@ body {
 }
 
 .hero-section .hero-section-container .hero-card {
-  padding: 80px 50px;
+  padding: 90px 50px !important;
 }
 
 .hero-section .hero-section-container .hero-card .hero-topbar-font {
@@ -97,8 +97,8 @@ body {
   position: absolute;
   right: 15px;
   top: 160px;
-  max-height: 442.82px;
-  max-width: 436.41px;
+  height: 442.82px;
+  width: 436.41px;
   z-index: 0;
 }
 
@@ -190,8 +190,8 @@ body {
 
 .agenda-section .agenda-section-container .agenda-image {
   max-width: 386px;
-  max-height: 386px;
-  margin: 0 0 -120px -79px;
+  max-height: 300px;
+  margin: -103px 0 0px -79px;
   position: absolute;
   z-index: 0;
 }
@@ -267,17 +267,20 @@ body {
   color: #c9c9c9 !important;
 }
 
-.attend-section .attend-section-content .attend-image-left {
-  bottom: -55px;
-  left: -3px;
-  opacity: 0.95;
-  max-width: 220px;
-}
-
+.attend-section .attend-section-content .attend-image-left,
 .attend-section .attend-section-content .attend-image-left-2 {
   bottom: -55px;
   left: -3px;
   opacity: 0.95;
+  height: auto;
+
+}
+
+.attend-section .attend-section-content .attend-image-left {
+  max-width: 220px;
+}
+
+.attend-section .attend-section-content .attend-image-left-2 {
   max-width: 260px;
 }
 
@@ -286,6 +289,8 @@ body {
   right: -23px;
   opacity: 0.95;
   max-width: 250px;
+  height: auto;
+
 }
 
 /* attendes Carousel */
@@ -712,33 +717,33 @@ body {
 @media (min-width: 1023px) {
 
   .hero-section .hero-section-container {
-    max-width: calc(100% + -63px);
+    max-width: calc(100% + -70px);
   }
 
   .hero-section .hero-section-container .hero-card {
     padding: 60px 50px 55px 50px;
   }
 
-
-  .attend-section .attend-section-content .attend-image-left {
+  .attend-section .attend-section-content .attend-image-left,
+  .attend-section .attend-section-content .attend-image-left-2 {
     bottom: -55px;
     left: -3px;
-    opacity: 0.95;
+    height: auto;
+  }
+
+  .attend-section .attend-section-content .attend-image-left {
     max-width: 180px;
   }
 
   .attend-section .attend-section-content .attend-image-left-2 {
-    bottom: -55px;
-    left: -3px;
-    opacity: 0.95;
     max-width: 220px;
   }
 
   .attend-section .attend-section-content .attend-image-right {
     bottom: -48px;
     right: -30px;
-    opacity: 0.95;
     max-width: 220px;
+    height: auto;
   }
 }
 
@@ -778,6 +783,7 @@ body {
     opacity: 0.8;
     z-index: 0;
     max-width: 300px;
+    height: auto;
     margin: 100px 10px 50px 350px;
   }
 
@@ -786,7 +792,7 @@ body {
   }
 
   .agenda-section .agenda-section-container .agenda-image {
-    margin-bottom: -127px;
+    display: none;
   }
 
   .agenda-section .agenda-section-container .agenda-cards .agenda-description-font {
@@ -794,7 +800,18 @@ body {
   }
 
   .agenda-section .agenda-section-container .agenda-btn {
-    margin-top: -230px;
+    margin-top: -60px;
+  }
+
+  .speakers-section .speaker-card .speaker-name {
+    font-size: 30px;
+    padding: 46px 0 0 40px;
+  }
+
+  .speakers-section .speaker-card .speaker-role {
+    font-size: 20px;
+    color: var(--secondary-dark);
+    padding: 46px 0 50px 40px;
   }
 
   .carousel-section .carousel-buttons {
@@ -884,6 +901,7 @@ body {
     display: block;
     margin: 120px 0 0 500px;
     max-width: 310px;
+    max-height: 310px;
   }
 
   .Ticket-section .Ticket-card .Ticket-btn {
@@ -965,20 +983,15 @@ body {
   }
 
   .features-section .feature-card-content .feature-icon-circle {
-    max-width: 45px;
-    max-height: 45px;
-    margin: 0 20px 0 0;
-    background-color: var(--primary-white);
+    width: 54px;
+    height: 54px;
     padding: 10px;
-    border-radius: 100%;
   }
 
   .features-section .feature-card-content .feature-avatar {
-    max-width: 45px;
-    max-height: 45px;
-    object-fit: cover;
-    margin-right: -20px;
-    border-radius: 100%;
+    width: 54px;
+    height: 54px;
+    margin: 0 0 0 10px;
   }
 
   .features-section .feature-card-content .features-section-btn {
@@ -1011,6 +1024,21 @@ body {
     margin: 0 auto;
   }
 
+  .speakers-section .speaker-card .speaker-name {
+    padding: 46px 0 0 40px;
+  }
+
+  .speakers-section .speaker-card .speaker-role {
+    color: var(--secondary-dark);
+    padding: 46px 0 50px 40px;
+  }
+
+  .speakers-section .speaker-sectio-btn {
+    font-size: 18px;
+    padding: 15px 35px;
+    gap: 20px;
+  }
+
   .attend-section-content {
     padding: 30px 20px !important;
   }
@@ -1019,25 +1047,27 @@ body {
     text-align: left !important;
   }
 
-  .attend-section .attend-section-content .attend-image-left {
+  .attend-section .attend-section-content .attend-image-left,
+  .attend-section .attend-section-content .attend-image-left-2,
+  .attend-section .attend-section-content .attend-image-right {
     bottom: -30px;
+    height: auto;
+  }
+
+  .attend-section .attend-section-content .attend-image-left {
     left: -3px;
-    opacity: 0.95;
     max-width: 110px;
   }
 
   .attend-section .attend-section-content .attend-image-left-2 {
-    bottom: -30px;
     left: -18px;
-    opacity: 0.95;
     max-width: 130px;
   }
 
   .attend-section .attend-section-content .attend-image-right {
-    bottom: -30px;
     right: -5px;
-    opacity: 0.95;
     max-width: 150px;
+    height: auto;
   }
 
   .carousel-section .attendes-carousel-title {
