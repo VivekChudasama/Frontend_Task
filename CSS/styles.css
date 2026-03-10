@@ -659,9 +659,9 @@ body {
 }
 
 @media (min-width: 1279px) {
-  .nexus-landing-page {
+  /* .nexus-landing-page {
     margin-right: 60px;
-  }
+  } */
 
   .on-big-screen {
     max-width: calc(100% - 80px) !important;
