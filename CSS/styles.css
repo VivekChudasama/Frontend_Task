@@ -659,9 +659,9 @@ body {
 }
 
 @media (min-width: 1279px) {
-  /* .nexus-landing-page {
+  .nexus-landing-page {
     margin-right: 60px;
-  } */
+  }
 
   .on-big-screen {
     max-width: calc(100% - 80px) !important;
@@ -1189,6 +1189,10 @@ body {
     padding: calc(0% + 20px);
   }
 
+  .offcanvas-custom-width {
+    --bs-offcanvas-width: 70%;
+  }
+
   .footer-section .footer-section-container .footer-gray {
     padding: 40px 30px 30px 35px;
   }
@@ -1215,7 +1219,5 @@ body {
     font-size: 19px;
   }
 
-  .offcanvas-custom-width {
-    --bs-offcanvas-width: 70%;
-  }
+
 }
