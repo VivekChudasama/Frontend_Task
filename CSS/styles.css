@@ -277,18 +277,18 @@ body {
 }
 
 .attend-section .attend-section-content .attend-image-left {
-  max-width: 220px;
+  max-width: 280px;
 }
 
 .attend-section .attend-section-content .attend-image-left-2 {
-  max-width: 260px;
+  max-width: 300px;
 }
 
 .attend-section .attend-section-content .attend-image-right {
   bottom: -48px;
   right: -23px;
   opacity: 0.95;
-  max-width: 250px;
+  max-width: 300px;
   height: auto;
 
 }
@@ -485,7 +485,7 @@ body {
 
 .register-section .register-content .register-section-container .register-image {
   max-width: 403px;
-  min-width: 403px;
+  height: auto;
 }
 
 /* ticket-section */
@@ -633,7 +633,7 @@ body {
 }
 
 .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
-  max-width: 1140px;
+  max-width: 1176px;
   height: auto;
   margin: 0 0 50px 0;
 }
@@ -732,17 +732,17 @@ body {
   }
 
   .attend-section .attend-section-content .attend-image-left {
-    max-width: 180px;
+    max-width: 200px;
   }
 
   .attend-section .attend-section-content .attend-image-left-2 {
-    max-width: 220px;
+    max-width: 210px;
   }
 
   .attend-section .attend-section-content .attend-image-right {
     bottom: -48px;
     right: -30px;
-    max-width: 220px;
+    max-width: 240px;
     height: auto;
   }
 }
