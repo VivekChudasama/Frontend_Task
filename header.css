@@ -1,0 +1,17 @@
+.nav-bar .nav-bar-content .nav-logo {
+  max-height: 30px;
+  width: auto;
+}
+
+.nav-bar .nav-bar-content .nav-text {
+  font-size: 25px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  padding: 8px 24px !important;
+}
+
+.nav-bar .nav-bar-content .nav-text:hover {
+  border-color: #fff;
+  color: var(--primary-white) !important;
+}
