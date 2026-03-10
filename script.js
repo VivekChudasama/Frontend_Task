@@ -20,3 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
     updatePositions();
   });
 });
+
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+        document.querySelector('.nav-link.active')?.classList.remove('active');
+        document.querySelector('.nav-link.active')?.removeAttribute('aria-current');
+        this.classList.add('active');
+    });
+});
