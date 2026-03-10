@@ -35,12 +35,17 @@ body {
 }
 
 .right-section {
-  max-width: 300px;
+  max-width: 295px;
 }
 
 .custom-radius {
   border-radius: var(--border-radius);
 }
+
+.section-Title-font {
+  line-height: 1.2;
+}
+
 
 /* home */
 
@@ -434,9 +439,6 @@ body {
   z-index: 100;
 }
 
-.register-section .register-section-Title-big-font {
-  line-height: 1.2;
-}
 
 .register-section .register-content .register-section-container {
   background-color: var(--secondary-blue);
@@ -541,11 +543,11 @@ body {
   background: var(--primary-blue);
   border: none;
   display: inline-flex;
-  align-items: center;
   justify-content: center;
   white-space: nowrap;
   transition: 0.3s all;
-  margin: 30px 0 30px 0;
+  margin: 0 0 30px 15px;
+  width: 90%;
 }
 
 .Ticket-section .Ticket-card.active .Ticket-btn {
@@ -627,7 +629,7 @@ body {
 
 .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
   max-width: 1100px;
-  height: 570px;
+  height: auto;
   margin: 0 0 50px 0;
 }
 
@@ -710,8 +712,13 @@ body {
 @media (min-width: 1023px) {
 
   .hero-section .hero-section-container {
-    max-width: calc(100% + -23px);
+    max-width: calc(100% + -63px);
   }
+
+  .hero-section .hero-section-container .hero-card {
+    padding: 60px 50px 55px 50px;
+  }
+
 
   .attend-section .attend-section-content .attend-image-left {
     bottom: -55px;
@@ -741,7 +748,11 @@ body {
   }
 
   .hero-section .hero-section-container {
-    width: calc(100% + -94px);
+    width: calc(100% + -46px);
+  }
+
+  .hero-section .hero-section-container .hero-card {
+    padding: 60px 50px 15px 50px;
   }
 
   .hero-section .hero-section-container .hero-card .hero-content .hero-title {
@@ -855,8 +866,10 @@ body {
 }
 
 @media (min-width: 1024px) and (max-width: 1281px) {
-  .nexus-landing-page {
-    margin-left: 60px;
+
+  .nav-bar .nav-bar-content .nav-text {
+    font-size: 22px;
+    padding: 8px 12px !important;
   }
 
   .hero-section .hero-section-container .hero-card .hero-content .hero-title {
@@ -875,6 +888,10 @@ body {
     display: block;
     margin: 120px 0 0 500px;
     max-width: 310px;
+  }
+
+  .Ticket-section .Ticket-card .Ticket-btn {
+    font-size: 20px;
   }
 
   .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
