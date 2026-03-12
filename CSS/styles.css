@@ -50,7 +50,7 @@ body {
 /* home */
 
 .hero-section .hero-section-container {
-  width: 1212px;
+  /* width: 1212px; */
   background-color: var(--secondary-blue);
 }
 
@@ -72,7 +72,6 @@ body {
   text-decoration: none;
   padding: 16px 50px;
   font-size: 25px;
-  color: var(--primary-white);
   border-radius: 100px;
   background: #0147ff;
   background: linear-gradient(49deg,
@@ -90,7 +89,7 @@ body {
 .hero-section .hero-section-container .hero-card .hero-content .top-text {
   position: relative;
   z-index: 1;
-  max-width: 810px;
+  max-width: 830px;
 }
 
 .hero-section .hero-section-container .hero-card .hero-content .hero-star-img {
@@ -104,11 +103,11 @@ body {
 
 .hero-section .hero-section-container .hero-card .hero-content .hero-subtitle {
   font-size: 22px;
+  line-height: 30px;
 }
 
 .company-section .company-bar {
   max-width: 1180px;
-  padding-left: 30px;
 }
 
 .company-section .company-bar .company-img {
@@ -127,7 +126,7 @@ body {
 }
 
 .features-section .feature-card-content .feature-card-title {
-  font-size: 42px;
+  font-size: 40px;
 }
 
 .features-section .feature-card-content .feature-card-description {
@@ -163,9 +162,6 @@ body {
   padding: 15px 25px;
 }
 
-.features-section .feature-card-content .features-section-btn .features-section-btn-icon {
-  padding: 0 0 0 10px;
-}
 
 /* AGENDA section  */
 
@@ -200,7 +196,6 @@ body {
   text-decoration: none;
   border: none;
   font-size: 25px;
-  color: var(--primary-white);
   background: #0147ff;
   background: linear-gradient(49deg,
       rgba(1, 71, 255, 1) 0%,
@@ -264,7 +259,6 @@ body {
 .attend-section .attend-section-content .attend-section-description {
   font-size: 18px;
   line-height: 1.6;
-  color: #c9c9c9 !important;
 }
 
 .attend-section .attend-section-content .attend-image-left,
@@ -404,13 +398,6 @@ body {
   color: var(--primary-white);
 }
 
-.testimonial-section .carousel-track .theme-blue .card-title,
-.testimonial-section .carousel-track .theme-blue .card-text,
-.testimonial-section .carousel-track .theme-blue .attendee-name,
-.testimonial-section .carousel-track .theme-blue .attendee-title {
-  color: var(--primary-white);
-}
-
 .testimonial-section .carousel-track .theme-light {
   background-color: var(--secondary-grey);
   color: #111111;
@@ -452,7 +439,6 @@ body {
 
 .register-section .register-content .register-section-container .register-top-text {
   font-size: 20px;
-  color: var(--primary-white);
 }
 
 .register-section .register-content .register-section-container .time {
@@ -473,7 +459,6 @@ body {
 
 .register-section .register-content .register-section-container .register-label {
   font-size: 16px;
-  color: var(--primary-white);
   margin-top: 25px;
   text-transform: uppercase;
 }
@@ -521,17 +506,14 @@ body {
 
 .Ticket-section .Ticket-card .ticket-description {
   font-size: 20px;
-  color: var(--primary-white);
   margin-bottom: 20px;
 }
 
-.Ticket-section .Ticket-card.active .ticket-description {
-  color: var(--primary-white);
-}
-
+.Ticket-section .Ticket-card.active .ticket-description ,
 .Ticket-section .Ticket-card:hover .ticket-description {
   color: var(--primary-white);
 }
+
 
 .Ticket-section .Ticket-card .ticket-price {
   font-size: 50px;
@@ -544,7 +526,6 @@ body {
   border-radius: 50px;
   padding: 22px 10px;
   font-size: 25px;
-  color: var(--primary-white);
   background: var(--primary-blue);
   border: none;
   display: inline-flex;
@@ -619,7 +600,6 @@ body {
   text-decoration: none;
   padding: 16px 55px;
   font-size: 18px;
-  color: var(--primary-white);
   background: var(--primary-blue);
   background: linear-gradient(69deg,
       rgba(1, 71, 255, 1) 0%,
@@ -641,24 +621,9 @@ body {
 
 /* media queary */
 
-@media (min-width: 992px) {
-  .footer-section .footer-section-container .footer-gray {
-    border-radius: 50px 0 0 20px;
-    padding-right: 64px !important;
-    max-height: 530px;
-  }
 
-  .footer-section .footer-section-container .footer-blue {
-    position: relative;
-    z-index: 10;
-    margin-left: -40px;
-    flex: 0 0 calc(50% + 40px);
-    max-width: calc(50% + 100px);
-    max-height: 530px;
-  }
-}
 
-@media (min-width: 1279px) {
+@media (min-width: 1200px) {
   .nexus-landing-page {
     margin-right: 60px;
   }
@@ -685,7 +650,7 @@ body {
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1300px) {
   .nexus-landing-page {
     margin-left: 46px !important;
   }
@@ -714,10 +679,9 @@ body {
 
 }
 
-@media (min-width: 1023px) {
-
+@media (min-width: 992px) {
   .hero-section .hero-section-container {
-    max-width: calc(100% + -70px);
+    max-width: calc(100% - 80px);
   }
 
   .hero-section .hero-section-container .hero-card {
@@ -747,13 +711,13 @@ body {
   }
 }
 
-@media (min-width: 767px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .section-Title-big-font {
     font-size: 65px;
   }
 
   .hero-section .hero-section-container {
-    width: calc(100% + -46px);
+    width: calc(100% - 46px);
   }
 
   .hero-section .hero-section-container .hero-card {
@@ -774,12 +738,10 @@ body {
   }
 
   .hero-section .hero-section-container .hero-card .hero-content .hero-star-img {
-    position: absolute;
     right: -50px;
     top: auto;
     bottom: 80px;
     display: block;
-    max-width: 350px;
     opacity: 0.8;
     z-index: 0;
     max-width: 300px;
@@ -791,6 +753,9 @@ body {
     margin-top: 25px;
   }
 
+  .agenda-section .agenda-section-container .agenda-card .agenda-cards {
+  padding: 80px 48px;
+}
   .agenda-section .agenda-section-container .agenda-image {
     display: none;
   }
@@ -878,13 +843,7 @@ body {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1281px) {
-
-  .nav-bar .nav-bar-content .nav-text {
-    font-size: 22px;
-    padding: 8px 12px !important;
-  }
-
+@media (min-width: 992px) and (max-width: 1199px) {
   .hero-section .hero-section-container .hero-card .hero-content .hero-title {
     font-size: 70px;
   }
@@ -895,7 +854,6 @@ body {
   }
 
   .hero-section .hero-section-container .hero-card .hero-content .hero-star-img {
-    position: absolute;
     right: auto;
     top: auto;
     display: block;
@@ -914,9 +872,13 @@ body {
   }
 }
 
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .nexus-landing-page {
     margin: 0 10px 0 10px;
+  }
+
+   .hero-section .hero-section-container {
+    max-width: calc(100% - 20px);
   }
 
   .section-Title-big-font {
@@ -930,21 +892,12 @@ body {
     max-width: 100%;
   }
 
-  .nav-bar .nav-bar-content.nav-logo {
-    max-width: 110px;
-  }
-
-  .nav-bar .nav-bar-content .navbar-toggler {
-    transform: scale(0.95);
-  }
-
   .hero-section .hero-section-container {
-    max-width: calc(100% - 17px);
+    max-width: calc(100% - 20px);
   }
 
   .hero-section .hero-section-container .hero-card {
-    padding: 40px 20px;
-    border-radius: 30px;
+    padding: 40px 15px !important;
   }
 
   .hero-section .hero-section-container .hero-card .hero-content .hero-title {
@@ -966,7 +919,7 @@ body {
   }
 
   .company-section .company-bar .company-img {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .features-section .feature-card-content .feature-card-title {
@@ -1002,7 +955,7 @@ body {
   }
 
   .agenda-section .agenda-section-container .agenda-card .agenda-cards {
-    padding: 80px 40px;
+    padding: 40px 25px !important;
   }
 
   .agenda-section .agenda-section-container .agenda-cards .agenda-description-font {
@@ -1012,7 +965,6 @@ body {
 
   .agenda-section .agenda-section-container .agenda-cards .agenda-large-font {
     font-size: 25px;
-    font-weight: var(--font-weight-bold);
   }
 
   .agenda-section .agenda-section-container .agenda-image {
@@ -1084,14 +1036,18 @@ body {
     height: 50px;
   }
 
+  .testimonial-section .carousel-track .testimonial-card .card-title {
+    font-size: 24px;
+}
   .testimonial-section .carousel-track {
     height: 420px;
   }
 
   .testimonial-section .carousel-track .testimonial-card {
+    padding: 30px !important;
     width: 90%;
     max-width: 360px;
-    height: 440px;
+    height: 370px;
   }
 
   .testimonial-section .carousel-track .pos-left {
@@ -1164,7 +1120,7 @@ body {
 
   .connect-section .connect-section-container {
     background-color: var(--secondary-blue);
-    padding: 90px 40px 10px 50px;
+    padding: 40px 20px 10px 30px;
   }
 
   .connect-section .connect-section-container .connect-card .connect-card-content .connect-left-col .connect-section-main-title {
@@ -1192,32 +1148,52 @@ body {
   .offcanvas-custom-width {
     --bs-offcanvas-width: 70%;
   }
+}
 
-  .footer-section .footer-section-container .footer-gray {
-    padding: 40px 30px 30px 35px;
+@media (max-width: 320px) {
+  .section-Title-big-font {
+    font-size: 35px;
   }
 
-  .footer-section .footer-section-container .footer-gray .row {
-    flex-direction: column;
-    gap: 30px;
+  .hero-section .hero-section-container .hero-card .hero-content .hero-title {
+    font-size: 35px;
   }
 
-  .footer-section .footer-section-container .footer-blue {
-    padding: 0px 25px 30px 25px !important;
+  .register-section .register-content .register-section-container .register-number {
+    font-size: 40px;
   }
 
-  .footer-section .footer-section-container .footer-btn {
-    padding: 5px 10px !important;
-    border-radius: 30px;
+  .register-section .register-content .register-section-container .register-colon {
+    font-size: 30px;
   }
 
-  .footer-section .footer-section-container .footer-text-large {
-    font-size: 24px;
+  .features-section .feature-card-content .feature-icon-circle {
+    display: none !important;
   }
 
-  .footer-section .footer-section-container .footer-text {
-    font-size: 19px;
+  .Ticket-section .ticket-main-title {
+    font-size: 30px;
   }
 
+  .testimonial-section .carousel-track .testimonial-card {
+    padding: 25px 30px;
+    height: auto;
+    min-height: 380px;
+  }
 
+  .testimonial-section .carousel-track .testimonial-card .card-title {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 15px;
+  }
+
+  .testimonial-section .carousel-track .testimonial-card .card-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .hero-section .hero-section-container .hero-card .hero-content .hero-btn {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
 }

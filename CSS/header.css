@@ -20,3 +20,22 @@
   border-color: #fff;
   color: var(--primary-white) !important;
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .nav-bar .nav-bar-content .nav-text {
+    font-size: 22px;
+    padding: 8px 12px !important;
+  }
+}
+
+
+@media (max-width: 767px) {
+   .nav-bar .nav-bar-content.nav-logo {
+    max-width: 110px;
+  }
+
+  .nav-bar .nav-bar-content .navbar-toggler {
+    transform: scale(0.95);
+  }
+}

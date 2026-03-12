@@ -8,20 +8,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="../CSS/styles.css" />
-    <link rel="stylesheet" href="../CSS/header.css"/>
-    <link rel="stylesheet" href="../CSS/footer.css"/>
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
 </head>
 
 <body class="nexus-landing-page">
     <div>
         <!-- header section -->
-        <header class="py-2 container-fluid">
-            <nav class="navbar navbar-expand-lg nav-bar">
+        <header class="py-2">
+            <nav class="navbar navbar-expand-lg nav-bar navbar-dark ">
                 <div class="container nav-bar-content on-big-screen">
                     <a class="navbar-brand" href="#"><img src="../images/logo/nexus.svg" class="nav-logo"
                             loading="eager"></a>
 
-                    <button class="navbar-toggler border-white border-opacity-50" type="button"
+                    <button class="navbar-toggler border-white " type="button"
                         data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -60,7 +60,7 @@
         </header>
 
         <main>
-            <div class="py-4 hero-section container-fluid">
+            <div class="py-4 px-1 px-xl-2 px-xxl-2 hero-section">
                 <!-- home section -->
                 <div class="container hero-section-container custom-radius on-big-screen" id="hero">
                     <div class="hero-card ">
@@ -73,7 +73,8 @@
 
                         <!-- Hero Content -->
                         <div class="hero-content position-relative">
-                            <img src="../images/home/hero-section-image.png" alt="Hero Graphic" class="hero-star-img" loading="eager" height="442.82px" width="436.41px">
+                            <img src="../images/home/hero-section-image.png" alt="Hero Graphic" class="hero-star-img"
+                                loading="eager" height="442.82px" width="436.41px">
                             <div class="row align-items-center">
                                 <div class="col-lg-9 top-content">
                                     <h1
@@ -88,7 +89,7 @@
                                     </p>
                                     <div
                                         class="mt-5 mb-5 mb-lg-0 position-relative d-flex justify-content-start hero-btn-div">
-                                        <a href="#" class="hero-btn">
+                                        <a href="#" class="hero-btn text-white">
                                             Early bird tickets
                                             <i class="bi bi-arrow-up-right ms-2"></i>
                                         </a>
@@ -101,32 +102,31 @@
             </div>
 
             <!-- sponsors -->
-            <div class="container-fluid ">
-                <div class="container company-section py-5 mt-5 mb-5 on-big-screen">
+                <div class="container company-section py-5 mt-lg-5 mb-lg-5 on-big-screen">
                     <div class=" text-center">
                         <div
                             class="company-bar d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center gap-4 gap-lg-0">
                             <img src="../images/home/company logo/amazon.svg" alt="amazon Logos" loading="eager"
-                                class="company-img " height="48px"  width="148px"/>
+                                class="company-img " height="48px" width="148px" />
 
                             <img src="../images/home/company logo/deibble.svg" alt="deibble Logos" loading="eager"
-                                class="company-img "  height="48px"  width="148px" />
+                                class="company-img " height="48px" width="148px" />
 
                             <img src="../images/home/company logo/hubspot.svg" alt="hubspot Logos" loading="eager"
-                                class="company-img "  height="48px"  width="148px"/>
+                                class="company-img " height="48px" width="148px" />
 
                             <img src="../images/home/company logo/notion.svg" alt="notion Logos" loading="eager"
-                                class="company-img "  height="48px"  width="148px"/>
+                                class="company-img " height="48px" width="148px" />
 
                             <img src="../images/home/company logo/gumroad.svg" alt="gumroad Logos" loading="eager"
-                                class="company-img "  height="48px"  width="148px"/>
+                                class="company-img " height="48px" width="148px" />
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- features  section -->
-            <div class="container-fluid" id="Speakers">
+            <div id="Speakers">
                 <div class="container features-section py-4 on-big-screen">
                     <div class="row g-4">
                         <!-- Speakers -->
@@ -134,11 +134,12 @@
                             <div
                                 class="feature-card-content feature-card-blue h-100  text-white rounded-5 p-4 p-md-5 d-flex flex-column justify-content-between position-relative overflow-hidden">
                                 <div>
-                                    <h2 class=" mb-4 feature-card-title ">Speakers</h2>
+                                    <h2 class=" mb-4 feature-card-title text-white">Speakers</h2>
                                     <div class="d-flex align-items-start gap-4 ">
                                         <div
                                             class="  text-black feature-icon-circle d-flex align-items-center justify-content- mt-4">
-                                            <img src="../images/home/blue-arrow.svg" class="feature-icon" loading="lazy" height="22px" width="23px">
+                                            <img src="../images/home/blue-arrow.svg" class="feature-icon" loading="lazy"
+                                                height="22px" width="23px">
                                         </div>
                                         <p class=" feature-card-description mt-3 ">
                                             Hear from global AI leaders, researchers, and entrepreneurs who are
@@ -158,10 +159,9 @@
                                         <img src="../images/home/home-spekers-icone/Speaker-3.svg" alt="Speaker"
                                             class="feature-avatar" loading="lazy" height="74px" width="74px">
                                     </div>
-                                    <button href="#"
-                                        class="features-section-btn btn  rounded-pill border-white text-white ">
-                                        And more <img src="../images/home/white-arrow.svg" class="features-section-btn-icon"
-                                            loading="lazy" height="17px" width="17px">
+                                    <button class="features-section-btn btn rounded-pill border-white text-white ">
+                                        And more <img src="../images/home/white-arrow.svg" class="ms-2" loading="lazy"
+                                            height="17px" width="17px">
                                     </button>
                                 </div>
                             </div>
@@ -214,9 +214,9 @@
                                             <div class="text-white agenda-large-font ">09:00 – 19:00</div>
                                         </div>
                                     </div>
-                                    <div class="agenda-right-col col-lg-7">
+                                    <div class="col-lg-7">
                                         <div>
-                                            <div class="text-white agenda-large-font">AI Innovations & Trends
+                                            <div class="text-white agenda-large-font mt-lg-0 mt-md-5 ">AI Innovations & Trends
                                             </div>
                                             <div class="text-white agenda-description-font ">The summit kicks off with a
                                                 keynote, expert panels, and discussions on AI’s impact, ethics, and
@@ -235,20 +235,21 @@
                                             <div class="text-white agenda-large-font ">09:00 – 20:00</div>
                                         </div>
                                     </div>
-                                    <div class="agenda-right-col col-lg-7">
+                                    <div class="col-lg-7">
                                         <div>
-                                            <div class="text-white  agenda-large-font">AI Technologies &
+                                            <div class="text-white  agenda-large-font mt-lg-0 mt-md-5">AI Technologies &
                                                 Applications
                                             </div>
-                                            <div class="text-white agenda-description-font ">The summit kicks off with a
-                                                keynote, expert panels, and discussions on AI’s impact, ethics, and
-                                                automation. Hands-on workshops and a networking event wrap up the day.
+                                            <div class="text-white agenda-description-font ">Explore the latest in
+                                                generative AI, robotics, and NLP, with industry-led discussions and tech
+                                                demos. A startup showcase and investor insights highlight AI’s business
+                                                potential.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class=" row d-flex flex-column align-items-start  flex-sm-row  justify-content-between mb-5">
+                                    class=" row d-flex flex-column align-items-start  flex-sm-row  justify-content-between mb-5 ">
                                     <div class="agenda-left-col col-lg-5">
                                         <div>
                                             <div class="text-white agenda-large-font ">Day 3</div>
@@ -257,9 +258,9 @@
                                             <div class="text-white agenda-large-font ">09:30 – 16:00</div>
                                         </div>
                                     </div>
-                                    <div class="agenda-right-col col-lg-7">
-                                        <div>
-                                            <div class="text-white agenda-large-font">Future of AI & Networking
+                                    <div class="col-lg-7">
+                                        <div >
+                                            <div class="text-white agenda-large-font mt-lg-0 mt-md-5">Future of AI & Networking
                                             </div>
                                             <div class="text-white agenda-description-font ">Dive into AI’s long-term
                                                 impact, attend expert-led workshops, and watch the startup pitch
@@ -272,10 +273,11 @@
                                 <div
                                     class="row d-flex flex-column align-items-start gap-2 flex-sm-row justify-content-sm-between justify-content-between">
                                     <div class="col-lg-4 position-relative ">
-                                        <img src="../images/Agenda/agenda-section-image.png" class="agenda-image" loading="lazy" height="386px" width="386px">
+                                        <img src="../images/Agenda/agenda-section-image.png" class="agenda-image"
+                                            loading="lazy" height="386px" width="386px">
                                     </div>
                                     <div class="col-lg-7 ">
-                                        <button href="#" class="agenda-btn custom-radius">
+                                        <button class="agenda-btn custom-radius text-white">
                                             View detailed schedule
                                             <i class="bi bi-arrow-up-right ms-2"></i>
                                         </button>
@@ -295,7 +297,7 @@
                             industry leaders shaping the future of AI.</span>
                     </div>
 
-                    <div class="row g-4 mb-5 pb-5 py-5 mt-lg-5">
+                    <div class="row g-4 mb-lg-5 pb-5 py-5 mt-lg-5">
                         <!-- Card 1 -->
                         <div class="col-md-6 col-lg-3">
                             <div
@@ -312,7 +314,8 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="speaker-card custom-radius image-card  overflow-hidden h-100">
                                 <img src="../images/spekers/Emily-Carter.png" alt="Emily-Carter image" loading="lazy"
-                                    class="w-100 h-100 object-fit-cover speaker-card-image" height="452px" width="295px">
+                                    class="w-100 h-100 object-fit-cover speaker-card-image" height="452px"
+                                    width="295px">
                             </div>
                         </div>
                         <!-- Card 3 -->
@@ -331,18 +334,20 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="speaker-card custom-radius image-card  overflow-hidden h-100">
                                 <img src="../images/spekers/Elon-Park.png" alt="Elon-Park image" loading="lazy"
-                                    class="w-100 h-100 object-fit-cover speaker-card-image"  height="452px" width="295px">
+                                    class="w-100 h-100 object-fit-cover speaker-card-image" height="452px"
+                                    width="295px">
                             </div>
                         </div>
                         <!-- Card 5 -->
                         <div class="col-md-6 col-lg-3">
                             <div class="speaker-card custom-radius image-card  overflow-hidden h-100">
                                 <img src="../images/spekers/Laura-Kim.png" alt="Laura-Kim image" loading="lazy"
-                                    class="w-100 h-100 object-fit-cover speaker-card-image"  height="452px" width="295px">
+                                    class="w-100 h-100 object-fit-cover speaker-card-image" height="452px"
+                                    width="295px">
                             </div>
                         </div>
                         <!-- Card 6 -->
-                        <div class="col-md-6 col-lg-3">
+                        <div class="col-md-6  col-lg-3">
                             <div
                                 class="speaker-card custom-radius text-card p-xl-4 d-flex flex-column justify-content-between h-100">
                                 <div>
@@ -357,7 +362,8 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="speaker-card custom-radius image-card  overflow-hidden h-100">
                                 <img src="../images/spekers/Alan-Foster.png" alt="Alan-Foster image" loading="lazy"
-                                    class="w-100 h-100 object-fit-cover speaker-card-image"  height="452px" width="295px">
+                                    class="w-100 h-100 object-fit-cover speaker-card-image" height="452px"
+                                    width="295px">
                             </div>
                         </div>
                         <!-- Card 8 -->
@@ -387,12 +393,13 @@
                     <div
                         class="section-topbar d-flex flex-column align-items-start gap-3 flex-sm-row justify-content-sm-between align-items-sm-center mb-5">
                         <span class="text-white section-Title-big-font">WHY ATTEND?</span>
-                        <span class="text-white section-Title-small-font mt-lg-4  right-section">Discover why Next-Gen AI Summit is the
+                        <span class="text-white section-Title-small-font mt-lg-4  right-section">Discover why Next-Gen
+                            AI Summit is the
                             must-attend event for AI professionals, innovators, and industry leaders.</span>
                     </div>
 
                     <!-- why-attend section content -->
-                    <div class="attend-section py-5">
+                    <div class="attend-section py-lg-5">
                         <div class="row g-4">
                             <!-- Box 1 -->
                             <div class="col-lg-6">
@@ -402,7 +409,8 @@
                                     <div class="row flex-grow-1 position-relative z-1">
                                         <div class="col-4 col-md-6">
                                             <img src="../images/why-attend/01.png" loading="lazy"
-                                                class="position-absolute attend-image-left z-0" alt="decoration" height="360px" width="274px">
+                                                class="position-absolute attend-image-left z-0" alt="decoration"
+                                                height="360px" width="274px">
                                         </div>
                                         <div class="col-8 col-md-6 d-flex align-items-center">
                                             <p class="mb-0 text-white attend-section-description">
@@ -422,7 +430,8 @@
                                     <div class="row flex-grow-1 position-relative z-1">
                                         <div class="col-4 col-md-6">
                                             <img src="../images/why-attend/02.png" loading="lazy"
-                                                class="position-absolute attend-image-left-2 z-0" alt="decoration" height="360px" width="313px">
+                                                class="position-absolute attend-image-left-2 z-0" alt="decoration"
+                                                height="360px" width="313px">
                                         </div>
                                         <div class="col-8 col-md-6 d-flex align-items-center">
                                             <p class="mb-0 text-white attend-section-description">
@@ -449,7 +458,8 @@
                                         </div>
                                         <div class="col-4 col-md-6">
                                             <img src="../images/why-attend/03.png" loading="lazy"
-                                                class="position-absolute attend-image-right z-0" alt="decoration" height="360px" width="313px">
+                                                class="position-absolute attend-image-right z-0" alt="decoration"
+                                                height="360px" width="313px">
                                         </div>
                                     </div>
                                 </div>
@@ -470,7 +480,8 @@
                                         </div>
                                         <div class="col-4 col-md-6">
                                             <img src="../images/why-attend/04.png" loading="lazy"
-                                                class="position-absolute attend-image-right z-0" alt="decoration" height="360px" width="313px">
+                                                class="position-absolute attend-image-right z-0" alt="decoration"
+                                                height="360px" width="313px">
                                         </div>
                                     </div>
                                 </div>
@@ -480,7 +491,7 @@
                 </div>
 
                 <!-- attendes Carousel  -->
-                <div class="container mt-lg-5 mt-md-5 on-big-screen carousel-section">
+                <div class="container mt-5 mt-md-5 on-big-screen carousel-section">
                     <div
                         class="d-flex flex-column align-items-start gap-3 flex-sm-row justify-content-sm-between align-items-sm-center mb-5">
                         <span class="attendes-carousel-title text-white">What Past Attendees Say</span>
@@ -500,17 +511,17 @@
                         <div class="testimonial-card custom-radius theme-blue pos-center">
                             <div>
                                 <h3 class="card-title">THE BEST AI<br />EVENT!</h3>
-                                <p class="card-text">
+                                <p class="card-text text-white">
                                     "Incredible speakers, top-tier networking, and cutting-edge
                                     discussions all in one place."
                                 </p>
                             </div>
                             <div class="attendee-info">
                                 <img src="../images/attendes-corosol/Elena-Rojas.svg" alt="Elena Rojas" loading="lazy"
-                                    class="attendee-avatar" height="50px" width="50px"/>
+                                    class="attendee-avatar" height="50px" width="50px" />
                                 <div>
-                                    <p class="attendee-name">Elena Rojas</p>
-                                    <p class="attendee-title">AI Researcher, DeepMind</p>
+                                    <p class="attendee-name text-white">Elena Rojas</p>
+                                    <p class="attendee-title text-white">AI Researcher, DeepMind</p>
                                 </div>
                             </div>
                         </div>
@@ -523,15 +534,15 @@
                                 </p>
                             </div>
                             <div class="attendee-info">
-                                <img src="../images/attendes-corosol/Mark-Vandenberg.svg" loading="lazy" alt="Mark Vandenberg"
-                                    class="attendee-avatar" height="50px" width="50px"/>
+                                <img src="../images/attendes-corosol/Mark-Vandenberg.svg" loading="lazy"
+                                    alt="Mark Vandenberg" class="attendee-avatar" height="50px" width="50px" />
                                 <div>
                                     <p class="attendee-name">Mark Vandenberg</p>
                                     <p class="attendee-title">CTO, NeuralTech</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="testimonial-card custom-radius theme-light pos-right">
+                        <div class="testimonial-card custom-radius theme-light  pos-right">
                             <div>
                                 <h3 class="card-title">UNMATCHED<br />OPPORTUNITIES</h3>
                                 <p class="card-text">
@@ -540,8 +551,8 @@
                                 </p>
                             </div>
                             <div class="attendee-info">
-                                <img src="../images/attendes-corosol/Mark-Vandenberg.svg" loading="lazy" alt="David Laurent"
-                                    class="attendee-avatar" height="50px" width="50px"/>
+                                <img src="../images/attendes-corosol/Mark-Vandenberg.svg" loading="lazy"
+                                    alt="David Laurent" class="attendee-avatar" height="50px" width="50px" />
                                 <div>
                                     <p class="attendee-name">David Laurent</p>
                                     <p class="attendee-title">CEO, FutureAI Labs</p>
@@ -554,7 +565,7 @@
                 <!-- register now -->
                 <div class="container mt-lg-5 mt-md-5 register-section on-big-screen">
                     <div
-                        class="pt-5 mt-5 d-flex flex-column align-items-start gap-4 flex-sm-row justify-content-sm-between align-items-sm-start ">
+                        class="pt-5 mt-lg-5 d-flex flex-column align-items-start gap-4 flex-sm-row justify-content-sm-between align-items-sm-start ">
                         <span class="text-white section-Title-big-font w-50 section-Title-font  ">REGISTER
                             NOW</span>
                         <span class="text-white section-Title-small-font pt-sm-5 right-section">Secure your
@@ -571,23 +582,24 @@
                                     <div class="d-flex align-items-start time text-white mt-4">
                                         <div class="d-flex flex-column align-items-center">
                                             <span class="register-number">12</span>
-                                            <span class="register-label">DAYS</span>
+                                            <span class="register-label text-white ">DAYS</span>
                                         </div>
                                         <span class="register-colon">:</span>
                                         <div class="d-flex flex-column align-items-center">
                                             <span class="register-number">05</span>
-                                            <span class="register-label">HOURS</span>
+                                            <span class="register-label text-white ">HOURS</span>
                                         </div>
                                         <span class="register-colon">:</span>
                                         <div class="d-flex flex-column align-items-center">
                                             <span class="register-number">30</span>
-                                            <span class="register-label">MINUTES</span>
+                                            <span class="register-label text-white ">MINUTES</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="register-image-container position-absolute bottom-0 end-0">
-                                <img src="../images/register-now/register-now-section-image.png" class="register-image" alt="decoration" height="403px" width="403px">
+                                <img src="../images/register-now/register-now-section-image.png" class="register-image"
+                                    alt="decoration" height="403px" width="403px">
                             </div>
                         </div>
                     </div>
@@ -595,7 +607,7 @@
                 <!-- Ticket section -->
                 <div class="container mt-lg-5 mt-md-5 Ticket-section on-big-screen" id="Tickets">
                     <div
-                        class="Ticket-topbar pt-5 mt-5 d-flex flex-column align-items-start gap-3 flex-sm-row justify-content-sm-between align-items-sm-start ">
+                        class="Ticket-topbar pt-2 mt-5 d-flex flex-column align-items-start gap-3 flex-sm-row justify-content-sm-between align-items-sm-start ">
                         <span class="text-white m-0 ticket-main-title">Ticket Options</span>
                     </div>
                     <div class="row g-4 mb-5 mt-4 pb-5 align-items-stretch">
@@ -604,11 +616,11 @@
                             <div class="Ticket-card  d-flex flex-column h-100">
                                 <p class="text-white ticket-title">EARLY BIRD PASS</p>
                                 <div class="flex-grow-1">
-                                    <p class="ticket-description">Limited time offer!</p>
+                                    <p class="ticket-description text-white">Limited time offer!</p>
                                 </div>
                                 <p class="text-white ticket-price">€299</p>
-                                <div >
-                                    <a href="#" class="Ticket-btn justify-content-center">
+                                <div>
+                                    <a href="#" class="Ticket-btn text-white justify-content-center">
                                         Get your ticket
                                         <i class="bi bi-arrow-up-right ms-2"></i>
                                     </a>
@@ -621,8 +633,8 @@
                                 <p class="text-white ticket-title">STANDARD PASS</p>
                                 <div class="flex-grow-1"></div>
                                 <p class="text-white ticket-price">€399</p>
-                                <div >
-                                    <a href="#" class="Ticket-btn  justify-content-center">
+                                <div>
+                                    <a href="#" class="Ticket-btn  justify-content-center text-white">
                                         Get your ticket
                                         <i class="bi bi-arrow-up-right ms-2"></i>
                                     </a>
@@ -634,12 +646,12 @@
                             <div class="Ticket-card d-flex flex-column h-100">
                                 <p class="text-white ticket-title">VIP EXPERIENCE</p>
                                 <div class="flex-grow-1">
-                                    <p class="ticket-description">Includes exclusive speaker meetups & front-row seating
+                                    <p class="ticket-description text-white">Includes exclusive speaker meetups & front-row seating
                                     </p>
                                 </div>
                                 <p class="text-white ticket-price">€699</p>
-                                <div >
-                                    <a href="#" class="Ticket-btn justify-content-center">
+                                <div>
+                                    <a href="#" class="Ticket-btn justify-content-center text-white">
                                         Get your ticket
                                         <i class="bi bi-arrow-up-right ms-2"></i>
                                     </a>
@@ -746,7 +758,7 @@
                                                         class=" connect-card-input connect-card-input-textarea connect-card-text mb-4 mt-4 w-100"
                                                         placeholder="Message" required></textarea>
                                                     <button type="submit"
-                                                        class=" connect-card-btn custom-radius connect-card-text mt-2 mb-3 fs-5">Stay
+                                                        class=" connect-card-btn text-white custom-radius connect-card-text mt-2 mb-3 fs-5">Stay
                                                         updated</button>
                                                 </form>
                                             </div>
@@ -758,7 +770,8 @@
                                 <div
                                     class="row d-flex align-items-start flex-sm-row justify-content-sm-between justify-content-between on-big-screen">
                                     <div class=" position-relative w-100">
-                                        <img src="../images/map/map.png" loading="lazy" class="connect-card-img" height="" width="1140px">
+                                        <img src="../images/map/map.png" loading="lazy" class="connect-card-img"
+                                            height="" width="1140px">
                                     </div>
                                 </div>
                             </div>
