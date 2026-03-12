@@ -49,7 +49,7 @@ body {
 
 /* home */
 
-.hero-section .hero-section-container {
+ .hero-section-container {
   /* width: 1212px; */
   background-color: var(--secondary-blue);
 }
@@ -106,10 +106,6 @@ body {
   line-height: 30px;
 }
 
-.company-section .company-bar {
-  max-width: 1180px;
-}
-
 .company-section .company-bar .company-img {
   max-width: 148px;
   max-height: 48px;
@@ -131,7 +127,7 @@ body {
 
 .features-section .feature-card-content .feature-card-description {
   font-size: 20px;
-  margin: 50px 0 0 0;
+  margin: 35px 0 0 0;
   line-height: 30px;
 }
 
@@ -144,7 +140,7 @@ body {
   max-width: 74px;
   max-height: 74px;
   margin: 0 20px 0 0;
-  background-color: var(--primary-white);
+  background-color: #D9D9D9;
   padding: 25px;
   border-radius: 100%;
 }
@@ -509,7 +505,7 @@ body {
   margin-bottom: 20px;
 }
 
-.Ticket-section .Ticket-card.active .ticket-description ,
+.Ticket-section .Ticket-card.active .ticket-description,
 .Ticket-section .Ticket-card:hover .ticket-description {
   color: var(--primary-white);
 }
@@ -621,15 +617,19 @@ body {
 
 /* media queary */
 
-
+@media (min-width: 1400px) {
+.hero-section .hero-section-container {
+    max-width: calc(100% - 90px) !important;
+  }
+}
 
 @media (min-width: 1200px) {
-  .nexus-landing-page {
-    margin-right: 60px;
-  }
-
   .on-big-screen {
     max-width: calc(100% - 80px) !important;
+  }
+
+  .hero-section .hero-section-container {
+    max-width: calc(100% - 57px) !important;
   }
 
   .testimonial-section .carousel-track .pos-left {
@@ -650,13 +650,13 @@ body {
   }
 }
 
-@media (min-width: 1300px) {
-  .nexus-landing-page {
-    margin-left: 46px !important;
-  }
-
+@media (min-width: 1500px) {
   .on-big-screen {
     max-width: calc(100% - 300px) !important;
+  }
+
+  .hero-section .hero-section-container {
+    max-width: calc(100% - 310px) !important;
   }
 
   .testimonial-section .carousel-track .pos-left {
@@ -681,7 +681,7 @@ body {
 
 @media (min-width: 992px) {
   .hero-section .hero-section-container {
-    max-width: calc(100% - 80px);
+    max-width: calc(100% - 90px);
   }
 
   .hero-section .hero-section-container .hero-card {
@@ -754,8 +754,9 @@ body {
   }
 
   .agenda-section .agenda-section-container .agenda-card .agenda-cards {
-  padding: 80px 48px;
-}
+    padding: 80px 48px;
+  }
+
   .agenda-section .agenda-section-container .agenda-image {
     display: none;
   }
@@ -873,12 +874,8 @@ body {
 }
 
 @media (max-width: 767px) {
-  .nexus-landing-page {
-    margin: 0 10px 0 10px;
-  }
-
-   .hero-section .hero-section-container {
-    max-width: calc(100% - 20px);
+  .hero-section .hero-section-container {
+    max-width: calc(100% - 124px) !important;
   }
 
   .section-Title-big-font {
@@ -890,10 +887,6 @@ body {
   .section-Title-small-font {
     font-size: 16px;
     max-width: 100%;
-  }
-
-  .hero-section .hero-section-container {
-    max-width: calc(100% - 20px);
   }
 
   .hero-section .hero-section-container .hero-card {
@@ -1038,7 +1031,8 @@ body {
 
   .testimonial-section .carousel-track .testimonial-card .card-title {
     font-size: 24px;
-}
+  }
+
   .testimonial-section .carousel-track {
     height: 420px;
   }
