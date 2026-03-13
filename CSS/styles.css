@@ -701,7 +701,7 @@ body {
 @media (min-width: 992px) {
 
   .hero-section .hero-section-container .hero-card {
-    padding: 60px 40px 55px 40px;
+    padding: 60px 40px 55px 40px !important;
   }
 
   .attend-section .attend-section-content .attend-image-left,
