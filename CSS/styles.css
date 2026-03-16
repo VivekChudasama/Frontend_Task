@@ -18,6 +18,7 @@ body {
   padding: 0;
   background-color: var(--body-color);
   font-family: var(--font);
+  overflow-x: hidden;
 }
 
 /* main */
@@ -58,7 +59,7 @@ body {
 }
 
 .hero-section .hero-section-container .hero-card {
-  padding: 90px 60px !important;
+  padding: 70px 60px !important;
 }
 
 .hero-section .hero-section-container .hero-card .hero-topbar-font {
@@ -652,19 +653,19 @@ body {
 /* media queary */
 @media (min-width: 1200px) {
   .on-big-screen {
-    max-width: calc(100% - 82px) !important;
+    max-width: calc(100% - 40px) !important;
   }
 
   .testimonial-section .carousel-track .pos-left {
-    transform: translate(calc(-98% + 6px), -50%);
+    transform: translate(calc(-98% + -96px), -50%);
   }
 
   .testimonial-section .carousel-track .pos-center {
-    transform: translate(-34%, -50%);
+    transform: translate(-40%, -50%);
   }
 
   .testimonial-section .carousel-track .pos-right {
-    transform: translate(calc(50% + -150px), -50%);
+    transform: translate(calc(50% + -100px), -50%);
     max-width: 480px;
   }
 
@@ -700,10 +701,6 @@ body {
 
 @media (min-width: 992px) {
 
-  .hero-section .hero-section-container .hero-card {
-    padding: 60px 40px 55px 40px !important;
-  }
-
   .attend-section .attend-section-content .attend-image-left,
   .attend-section .attend-section-content .attend-image-left-2 {
     bottom: -55px;
@@ -728,12 +725,16 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .on-big-screen {
+    max-width: calc(100% - 30px) !important;
+  }
+
   .section-Title-big-font {
     font-size: 65px;
   }
 
-  .hero-section .hero-section-container .hero-card {
-    padding: 60px 50px 15px 50px;
+  .hero-section {
+    margin: 30px 0 50px 0;
   }
 
   .hero-section .hero-section-container .hero-card .hero-content .hero-title {
@@ -761,6 +762,18 @@ body {
     margin: 100px 10px 50px 350px;
   }
 
+  .company-section {
+    margin-bottom: 60px;
+  }
+
+  .agenda-section {
+    margin-top: 75px;
+  }
+
+  .agenda-section .section-topbar {
+    margin-bottom: 45px;
+  }
+
   .attend-section .attend-section-content-gap {
     margin-top: 25px;
   }
@@ -786,6 +799,10 @@ body {
     padding: 46px 0 0 40px;
   }
 
+  .speakers-section .speaker-topbar {
+    margin: 75px 0 0 0;
+  }
+
   .speakers-section .speaker-card .speaker-role {
     font-size: 20px;
     color: var(--secondary-dark);
@@ -808,9 +825,16 @@ body {
     order: 3;
   }
 
+  .attend-section .attend-section-topbar {
+    margin: 75px 0 65px 0;
+  }
+
+  .carousel-section .attendes-carousel-title {
+    margin: 20px 0 47px 0;
+  }
 
   .carousel-section .carousel-buttons {
-    margin-top: 15px;
+    margin-top: 78px;
   }
 
   .carousel-section .carousel-buttons .carousel-button {
@@ -819,7 +843,7 @@ body {
   }
 
   .testimonial-section .carousel-track {
-    height: 420px;
+    height: 350px;
   }
 
   .testimonial-section .carousel-track .testimonial-card {
@@ -833,30 +857,21 @@ body {
   }
 
   .testimonial-section .carousel-track .pos-center {
-    transform: translate(-50%, -50%);
+    transform: translate(-44%, -50%);
 
   }
 
   .testimonial-section .carousel-track .pos-right {
-    transform: translate(calc(50% + -247px), -50%);
+    transform: translate(calc(50% + -210px), -50%);
     max-width: 400px;
   }
 
-  .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
-    width: calc(100% + 38px);
-    margin: 0 0 50px calc(100% - 103%);
+  .register-section {
+    margin-top: 80px;
   }
 
-  .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-grey {
-    margin: 30px 0 0 0px;
-  }
-
-  .connect-section .connect-section-container .connect-card .connect-card-content .connect-left-col .connect-section-description {
-    margin: 5px 0 0 0;
-  }
-
-  .connect-section .connect-section-container .connect-card .connect-card-content .connect-left-col .connect-section-secondary-title {
-    margin: 20px 0 0 0;
+  .register-section .register-content {
+    margin-top: 30px;
   }
 
   .register-section .register-content .register-section-container .time {
@@ -870,6 +885,31 @@ body {
   .register-section .register-content .register-section-container .register-colon {
     margin: 20px 0 0 0;
     font-size: 100px;
+  }
+
+  .Ticket-section .Ticket-topbar {
+    margin: 50px 0 30px 0;
+  }
+
+  .connect-section .connect-section-container {
+    margin: 70px 0 50px 0;
+  }
+
+  .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
+    width: calc(100% + 85px);
+    margin: 0 0 50px calc(100% - 101.5%);
+  }
+
+  .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-grey {
+    margin: 30px 0 0 5px;
+  }
+
+  .connect-section .connect-section-container .connect-card .connect-card-content .connect-left-col .connect-section-description {
+    margin: 5px 0 0 0;
+  }
+
+  .connect-section .connect-section-container .connect-card .connect-card-content .connect-left-col .connect-section-secondary-title {
+    margin: 20px 0 0 0;
   }
 }
 
@@ -924,7 +964,6 @@ body {
     max-width: 100%;
   }
 
-
   .hero-section {
     margin: 20px 0 40px 0;
   }
@@ -951,8 +990,13 @@ body {
     margin: 0 auto !important;
   }
 
+  .company-section .company-bar .company-img {
+    max-width: 100px;
+    max-height: 40px;
+  }
+
   .features-section {
-    margin-top: -60px;
+    margin-top: -75px;
   }
 
   .features-section .feature-card-content .feature-card-title {
