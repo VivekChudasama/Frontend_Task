@@ -599,13 +599,33 @@ body {
 
 
 /* media queary */
-@media (min-width: 1200px) {
+@media (min-width : 1330px) and (max-width : 1499.99px) {
+  .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
+    width: calc(100% + 10px) !important;
+  }
+
+  .testimonial-section .carousel-track .pos-left {
+    transform: translate(calc(-98% + -141px), -50%);
+  }
+
+  .testimonial-section .carousel-track .pos-center {
+    transform: translate(-46%, -50%);
+  }
+
+  .testimonial-section .carousel-track .pos-right {
+    transform: translate(calc(50% + -100px), -50%);
+    max-width: 480px;
+  }
+
+}
+
+@media (min-width: 1200px) and (max-width : 1330px) {
   .on-big-screen {
     max-width: calc(100% - 100px) !important;
   }
 
   .testimonial-section .carousel-track .pos-left {
-    transform: translate(calc(-98% + -96px), -50%);
+    transform: translate(calc(-98% + -32px), -50%);
   }
 
   .testimonial-section .carousel-track .pos-center {
@@ -618,7 +638,7 @@ body {
   }
 
   .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
-    width: calc(100% + 131px) !important;
+    width: calc(100% + 136px) !important;
   }
 }
 
@@ -647,31 +667,6 @@ body {
 
 }
 
-@media (min-width: 992px) {
-
-  .attend-section .attend-section-content .attend-image-left,
-  .attend-section .attend-section-content .attend-image-left-2 {
-    bottom: -55px;
-    left: -3px;
-    height: auto;
-  }
-
-  .attend-section .attend-section-content .attend-image-left {
-    max-width: 200px;
-  }
-
-  .attend-section .attend-section-content .attend-image-left-2 {
-    max-width: 210px;
-  }
-
-  .attend-section .attend-section-content .attend-image-right {
-    bottom: -48px;
-    right: -30px;
-    max-width: 240px;
-    height: auto;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 991px) {
   .on-big-screen {
     max-width: calc(100% - 20px) !important;
@@ -687,11 +682,7 @@ body {
 
 
   .hero-section .hero-section-container .hero-card .hero-content .hero-title {
-    font-size: 50px;
-  }
-
-  .hero-section .hero-section-container .hero-card .hero-content .hero-subtitle {
-    max-width: 470px;
+    font-size: 86px;
   }
 
   .hero-section .hero-section-container .hero-card .hero-content .hero-btn {
@@ -845,7 +836,7 @@ body {
   }
 
   .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
-    width: calc(100% + 85px);
+    width: calc(100% + 71px);
     margin: 0 0 50px calc(100% - 101.5%);
   }
 
@@ -862,13 +853,13 @@ body {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 991px) and (max-width: 1199px) {
   .on-big-screen {
-    max-width: calc(100% - 30px) !important;
+    max-width: calc(100% - 100px) !important;
   }
 
   .hero-section .hero-section-container .hero-card .hero-content .hero-title {
-    font-size: 70px;
+    font-size: 80px;
   }
 
   .hero-section .hero-section-container .hero-card .hero-content .hero-btn {
@@ -877,9 +868,8 @@ body {
   }
 
   .hero-section .hero-section-container .hero-card .hero-content .hero-star-img {
-    right: auto;
-    top: auto;
-    display: block;
+    top: 30px;
+    right: calc(100% + -840px);
     margin: 120px 0 0 500px;
     max-width: 310px;
     max-height: 310px;
@@ -900,8 +890,30 @@ body {
   }
 
   .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
-    width: calc(100% + 31px);
-    margin: 0 0 50px -13px;
+    width: calc(100% + 63px);
+    margin: 0 0 50px 0;
+  }
+
+  .attend-section .attend-section-content .attend-image-left,
+  .attend-section .attend-section-content .attend-image-left-2 {
+    bottom: -55px;
+    left: -3px;
+    height: auto;
+  }
+
+  .attend-section .attend-section-content .attend-image-left {
+    max-width: 200px;
+  }
+
+  .attend-section .attend-section-content .attend-image-left-2 {
+    max-width: 210px;
+  }
+
+  .attend-section .attend-section-content .attend-image-right {
+    bottom: -48px;
+    right: -30px;
+    max-width: 240px;
+    height: auto;
   }
 }
 
@@ -983,9 +995,7 @@ body {
 
   .features-section .feature-card-content .features-section-btn {
     font-size: 16px;
-    padding: 10px 20px;
-    display: inline-block;
-    width: 100%;
+    padding: 13px 24px;
   }
 
   .agenda-section {
