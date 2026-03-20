@@ -12,6 +12,7 @@
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   --border-radius: 50px;
+  --linear-gradient: linear-gradient(49deg, rgba(1, 71, 255, 1) 0%, rgba(6, 32, 117, 1) 92%);
 }
 
 body {
@@ -39,7 +40,7 @@ body {
   max-width: 295px;
 }
 
-.custom-radius {
+.custom-radius-50 {
   border-radius: var(--border-radius);
 }
 
@@ -73,17 +74,12 @@ body {
 }
 
 .hero-section .hero-section-container .hero-card .hero-content .hero-btn {
-  text-decoration: none;
   padding: 16px 50px;
   font-size: 25px;
   border-radius: 100px;
-  background: #0147ff;
-  background: linear-gradient(49deg,
-      rgba(1, 71, 255, 1) 0%,
-      rgba(6, 32, 117, 1) 92%);
+  background: var(--primary-blue);
+  background: var(--linear-gradient);
   margin: 40px 0 0 0;
-  display: inline-block;
-  white-space: nowrap;
 }
 
 .hero-section .hero-section-container .hero-content {
@@ -91,13 +87,11 @@ body {
 }
 
 .hero-section .hero-section-container .hero-card .hero-content .top-text {
-  position: relative;
   z-index: 1;
   max-width: 830px;
 }
 
 .hero-section .hero-section-container .hero-card .hero-content .hero-star-img {
-  position: absolute;
   right: 45px;
   top: 160px;
   height: 442.82px;
@@ -199,20 +193,13 @@ body {
   max-width: 386px;
   max-height: 300px;
   margin: -103px 0 0px -79px;
-  position: absolute;
   z-index: 0;
 }
 
 .agenda-section .agenda-section-container .agenda-btn {
-  text-decoration: none;
-  border: none;
   font-size: 25px;
-  background: #0147ff;
-  background: linear-gradient(49deg,
-      rgba(1, 71, 255, 1) 0%,
-      rgba(6, 32, 117, 1) 92%);
-  display: block;
-  width: 100%;
+  background: var(--primary-blue);
+  background: var(--linear-gradient);
   padding: 20px;
 }
 
@@ -258,7 +245,6 @@ body {
 /* why attend section */
 .attend-section {
   z-index: 100;
-  position: relative;
 }
 
 .attend-section .attend-section-topbar {
@@ -314,16 +300,12 @@ body {
 }
 
 .carousel-section .carousel-buttons {
-  display: flex;
   gap: 16px;
 }
 
 .carousel-section .carousel-buttons .carousel-button {
   width: 74px;
   height: 74px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -341,7 +323,6 @@ body {
 
 .carousel-section .carousel-buttons .next-btn {
   background-color: var(--secondary-grey);
-  border: none;
   color: var(--primary-blue);
 }
 
@@ -352,19 +333,14 @@ body {
 
 /* --- Carousel Track --- */
 .testimonial-section .carousel-track {
-  position: relative;
   height: 423px;
 }
 
 .testimonial-section .carousel-track .testimonial-card {
-  position: absolute;
   top: 50%;
   max-width: 500px;
   height: 420px;
   padding: 45px 62px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -372,7 +348,6 @@ body {
 .testimonial-section .carousel-track .testimonial-card .card-title {
   font-weight: 700;
   font-size: 30px;
-  text-transform: uppercase;
   line-height: 34px;
   margin-bottom: 25px;
 }
@@ -384,8 +359,6 @@ body {
 }
 
 .testimonial-section .carousel-track .testimonial-card .attendee-info {
-  display: flex;
-  align-items: center;
   gap: 15px;
 }
 
@@ -397,7 +370,6 @@ body {
 }
 
 .testimonial-section .carousel-track .testimonial-card .attendee-name {
-  font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
   margin: 0;
@@ -449,7 +421,6 @@ body {
 /* register now */
 .register-section {
   margin-top: 200px;
-  position: relative;
   z-index: 100;
 }
 
@@ -485,7 +456,6 @@ body {
 .register-section .register-content .register-section-container .register-label {
   font-size: 16px;
   margin-top: 25px;
-  text-transform: uppercase;
 }
 
 .register-section .register-content .register-section-container .register-image-container {
@@ -516,13 +486,8 @@ body {
   background-color: transparent;
 }
 
-.Ticket-section .Ticket-card.active {
-  background-color: var(--primary-blue);
-  border-color: var(--primary-blue);
-}
-
+.Ticket-section .Ticket-card.active,
 .Ticket-section .Ticket-card:hover {
-
   background-color: var(--primary-blue);
   border-color: var(--primary-blue);
 }
@@ -530,7 +495,6 @@ body {
 .Ticket-section .Ticket-card .ticket-title {
   font-size: 26px;
   font-weight: var(--font-weight-bold);
-  text-transform: uppercase;
   margin-bottom: 30px;
 }
 
@@ -552,26 +516,17 @@ body {
 }
 
 .Ticket-section .Ticket-card .Ticket-btn {
-  text-decoration: none;
   border-radius: 50px;
   padding: 22px 10px;
   font-size: 25px;
   background: var(--primary-blue);
-  border: none;
-  display: inline-flex;
-  justify-content: center;
-  white-space: nowrap;
   transition: 0.3s all;
   margin: 0 0 30px 15px;
   width: 90%;
   color: var(--primary-white);
 }
 
-.Ticket-section .Ticket-card.active .Ticket-btn {
-  background: #e2e2e2;
-  color: var(--secondary-dark);
-}
-
+.Ticket-section .Ticket-card.active,
 .Ticket-section .Ticket-card:hover .Ticket-btn {
   background: #e2e2e2;
   color: var(--secondary-dark);
@@ -619,7 +574,6 @@ body {
 
 .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-grey .connect-card-text {
   color: var(--secondary-dark);
-  text-decoration: none;
 }
 
 .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-grey .connect-card-input-textarea {
@@ -628,18 +582,12 @@ body {
 }
 
 .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-grey .connect-card-btn {
-  text-decoration: none;
   padding: 16px 55px;
   font-size: 18px;
   background: var(--primary-blue);
   background: linear-gradient(69deg,
       rgba(1, 71, 255, 1) 0%,
       rgba(97, 142, 255, 1) 95%);
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
   transition: 0.3s all;
 }
 
@@ -653,7 +601,7 @@ body {
 /* media queary */
 @media (min-width: 1200px) {
   .on-big-screen {
-    max-width: calc(100% - 40px) !important;
+    max-width: calc(100% - 100px) !important;
   }
 
   .testimonial-section .carousel-track .pos-left {
@@ -726,7 +674,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .on-big-screen {
-    max-width: calc(100% - 30px) !important;
+    max-width: calc(100% - 20px) !important;
   }
 
   .section-Title-big-font {
@@ -736,6 +684,7 @@ body {
   .hero-section {
     margin: 30px 0 50px 0;
   }
+
 
   .hero-section .hero-section-container .hero-card .hero-content .hero-title {
     font-size: 50px;
@@ -914,6 +863,10 @@ body {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .on-big-screen {
+    max-width: calc(100% - 30px) !important;
+  }
+
   .hero-section .hero-section-container .hero-card .hero-content .hero-title {
     font-size: 70px;
   }
@@ -953,6 +906,10 @@ body {
 }
 
 @media (max-width: 767px) {
+  .on-big-screen {
+    max-width: calc(100% - 20px) !important;
+  }
+
   .section-Title-big-font {
     font-size: 50px;
     font-weight: var(--font-weight-bold);
@@ -969,7 +926,7 @@ body {
   }
 
   .hero-section .hero-section-container .hero-card {
-    padding: 40px 15px !important;
+    padding: 40px 15px 0 15px !important;
   }
 
   .hero-section .hero-section-container .hero-card .hero-content .hero-title {
@@ -1014,8 +971,8 @@ body {
 
   .features-section .feature-card-content .feature-icon-circle {
     width: 54px;
-    height: 54px;
-    padding: 10px;
+    height: 48px;
+    padding: 15px;
   }
 
   .features-section .feature-card-content .feature-avatar {
@@ -1246,7 +1203,7 @@ body {
   }
 
   .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
-    width: calc(100% + 22px);
+    width: calc(100% + 70px);
     margin: 0 0 50px -18px;
   }
 
