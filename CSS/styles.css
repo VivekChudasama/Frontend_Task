@@ -644,7 +644,7 @@ body {
 
 @media (min-width: 1500px) {
   .on-big-screen {
-    max-width: calc(100% - 400px) !important;
+    max-width: calc(100% - 260px) !important;
   }
 
   .testimonial-section .carousel-track .pos-left {
