@@ -8,15 +8,18 @@
   transition: all 0.3s ease;
   box-sizing: border-box;
   border: 1px solid transparent;
-  padding: 8px 24px ;
+  padding: 8px 20px ;
+  font-weight: var(--font-weight-normal);
 }
 
 .nav-bar .nav-bar-content .nav-text:hover {
+  padding: 10px 25px;
   border-color: #fff;
   color: var(--primary-white) !important;
 }
 
 .nav-bar .nav-bar-content .nav-link.active {
+  padding: 10px 25px;
   border-color: #fff;
   color: var(--primary-white) !important;
 }
