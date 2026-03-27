@@ -27,8 +27,8 @@
 .footer-section .footer-section-container .footer-input {
   background-color: var(--primary-blue);
   border: none;
-  border-bottom: 2px solid white;
-  max-width: 600px;
+  border-bottom: 1px solid white;
+  max-width: 470px;
 }
 
 .footer-section .footer-section-container .footer-input::placeholder {
