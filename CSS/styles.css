@@ -662,11 +662,7 @@ body {
 
 @media (min-width: 1500px) {
   .on-big-screen {
-<<<<<<< HEAD
     max-width: calc(100% - 440px) !important;
-=======
-    max-width: calc(100% - 260px) !important;
->>>>>>> c460c83c3dd62c8a470d1f2ace996cd03e590f39
   }
 
   .testimonial-section .carousel-track .pos-left {
@@ -683,7 +679,7 @@ body {
   }
 
   .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
-    width: calc(100% + 405px) !important;
+    width: calc(100% + 490px) !important;
     margin: 0 0 50px -10px;
   }
 
