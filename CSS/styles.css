@@ -156,13 +156,13 @@ body {
   max-width: 74px;
   max-height: 74px;
   object-fit: cover;
-  margin-right: -36px;
+  margin-right: -38px;
   border-radius: 100%;
 }
 
 .features-section .feature-card-content .features-section-btn {
   font-size: 25px;
-  padding: 15px 25px;
+  padding: 15px 20px;
 }
 
 
@@ -787,7 +787,7 @@ body {
   }
 
   .carousel-section .attendes-carousel-title {
-    margin: 20px 0 47px 0;
+    margin: 90px 0 47px 0;
   }
 
   .carousel-section .carousel-buttons {
@@ -1133,7 +1133,7 @@ body {
 
   .carousel-section .attendes-carousel-title,
   .carousel-buttons {
-    margin: 55px 0 0 0 !important;
+    margin: 35px 0 -8px 0 !important;
   }
 
   .carousel-section .attendes-carousel-title {
