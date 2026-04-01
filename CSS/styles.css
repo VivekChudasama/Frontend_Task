@@ -131,7 +131,7 @@ body {
   font-size: 40px;
 }
 
-.features-section .feature-card-content .feature-card-description ,
+.features-section .feature-card-content .feature-card-description,
 .features-section .feature-card-content .feature-card-description-right {
   font-size: 20px;
   margin: 35px 0 0 0;
@@ -661,8 +661,8 @@ body {
   }
 
   .features-section .feature-card-content .feature-card-description {
-  margin: 35px 45px 0 0;
-}
+    margin: 35px 45px 0 0;
+  }
 
   .testimonial-section .carousel-track .pos-left {
     transform: translate(calc(-98% + 108px), -50%);
@@ -720,7 +720,7 @@ body {
   }
 
   .company-section {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .agenda-section {
@@ -983,6 +983,10 @@ body {
     margin: 0 auto !important;
   }
 
+  .company-section {
+    margin-bottom: 90px;
+  }
+
   .company-section .company-bar .company-img {
     max-width: 100px;
     max-height: 40px;
@@ -996,7 +1000,7 @@ body {
     font-size: 24px;
   }
 
-  .features-section .feature-card-content .feature-card-description  ,
+  .features-section .feature-card-content .feature-card-description,
   .features-section .feature-card-content .feature-card-description-right {
     font-size: 19px;
   }
