@@ -684,7 +684,7 @@ body {
 
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .on-big-screen {
     max-width: calc(100% - 20px) !important;
   }
@@ -870,7 +870,7 @@ body {
   }
 }
 
-@media (min-width: 991px) and (max-width: 1199px) {
+@media (min-width: 1024px) and (max-width: 1199px) {
   .on-big-screen {
     max-width: calc(100% - 100px) !important;
   }
