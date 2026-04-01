@@ -13,13 +13,13 @@
 }
 
 .nav-bar .nav-bar-content .nav-text:hover {
-  padding: 10px 25px;
+  padding: 10px 20px;
   border-color: #fff;
   color: var(--primary-white) !important;
 }
 
 .nav-bar .nav-bar-content .nav-link.active {
-  padding: 10px 25px;
+  padding: 10px 20px;
   border-color: #fff;
   color: var(--primary-white) !important;
 }

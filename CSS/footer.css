@@ -28,7 +28,8 @@
   background-color: var(--primary-blue);
   border: none;
   border-bottom: 1px solid white;
-  max-width: 470px;
+  max-width: 480px;
+  width: 460px;
 }
 
 .footer-section .footer-section-container .footer-input::placeholder {

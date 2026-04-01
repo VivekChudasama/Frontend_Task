@@ -30,6 +30,8 @@ body {
   font-size: 100px;
   font-weight: var(--font-weight-bold);
   margin: 30px 0 30px 0;
+  line-height: 1.2;
+
 }
 
 .section-Title-small-font {
@@ -44,9 +46,6 @@ body {
   border-radius: var(--border-radius);
 }
 
-.section-Title-font {
-  line-height: 1.2;
-}
 
 
 /* home */
@@ -60,7 +59,7 @@ body {
 }
 
 .hero-section .hero-section-container .hero-card {
-  padding: 70px 60px !important;
+  padding: 70px 60px 100px 60px !important;
 }
 
 .hero-section .hero-section-container .hero-card .hero-topbar-font {
@@ -88,11 +87,11 @@ body {
 
 .hero-section .hero-section-container .hero-card .hero-content .top-text {
   z-index: 1;
-  max-width: 830px;
+  max-width: 873px;
 }
 
 .hero-section .hero-section-container .hero-card .hero-content .hero-star-img {
-  right: 0px;
+  right: 40px;
   top: 170px;
   height: 442.82px;
   width: 436.41px;
@@ -132,7 +131,8 @@ body {
   font-size: 40px;
 }
 
-.features-section .feature-card-content .feature-card-description {
+.features-section .feature-card-content .feature-card-description ,
+.features-section .feature-card-content .feature-card-description-right {
   font-size: 20px;
   margin: 35px 0 0 0;
   line-height: 30px;
@@ -243,7 +243,7 @@ body {
 
 .speakers-section .speaker-sectio-btn {
   font-size: 25px;
-  padding: 20px 50px;
+  padding: 18px 50px;
   gap: 20px;
 }
 
@@ -277,7 +277,6 @@ body {
   left: -3px;
   opacity: 0.95;
   height: auto;
-
 }
 
 .attend-section .attend-section-content .attend-image-left {
@@ -292,14 +291,14 @@ body {
   bottom: -48px;
   right: -23px;
   opacity: 0.95;
-  max-width: 270px;
+  max-width: 320px;
   height: auto;
 
 }
 
 /* attendes Carousel */
 .carousel-section .attendes-carousel-title,
-.carousel-buttons {
+.carousel-section .carousel-buttons {
   margin: 166px 0 94px 0;
   font-size: 50px;
 }
@@ -360,7 +359,7 @@ body {
 .testimonial-section .carousel-track .testimonial-card .card-text {
   font-size: 20px;
   line-height: 28px;
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
 }
 
 .testimonial-section .carousel-track .testimonial-card .attendee-info {
@@ -597,7 +596,6 @@ body {
 }
 
 .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
-  max-width: 1176px;
   height: auto;
   margin: 0 0 50px 0;
 }
@@ -646,9 +644,6 @@ body {
     transform: translate(calc(-98% + -32px), -50%);
   }
 
-  .testimonial-section .carousel-track .pos-center {
-    transform: translate(-40%, -50%);
-  }
 
   .testimonial-section .carousel-track .pos-right {
     transform: translate(calc(50% + -100px), -50%);
@@ -662,24 +657,28 @@ body {
 
 @media (min-width: 1500px) {
   .on-big-screen {
-    max-width: calc(100% - 440px) !important;
+    max-width: calc(100% - 400px) !important;
   }
+
+  .features-section .feature-card-content .feature-card-description {
+  margin: 35px 45px 0 0;
+}
 
   .testimonial-section .carousel-track .pos-left {
     transform: translate(calc(-98% + 108px), -50%);
   }
 
   .testimonial-section .carousel-track .pos-center {
-    transform: translate(12%, -50%);
+    transform: translate(-20%, -50%);
   }
 
   .testimonial-section .carousel-track .pos-right {
-    transform: translate(calc(50% + 205px), -50%);
-    max-width: 480px;
+    transform: translate(calc(50% + 220px), -50%);
+    max-width: 460px;
   }
 
   .connect-section .connect-section-container .connect-card .connect-card-content .connect-card-img {
-    width: calc(100% + 490px) !important;
+    width: calc(100% + 445px) !important;
     margin: 0 0 50px -10px;
   }
 
@@ -820,7 +819,7 @@ body {
   }
 
   .testimonial-section .carousel-track .pos-right {
-    transform: translate(calc(50% + -210px), -50%);
+    transform: translate(calc(50% + -227px), -50%);
     max-width: 400px;
   }
 
@@ -896,6 +895,19 @@ body {
   .speakers-section .speaker-card .speaker-role {
     font-size: 18px;
     padding: 46px 0 50px 25px;
+  }
+
+  .testimonial-section .carousel-track .pos-left {
+    transform: translate(calc(-150% + 290px), -50%);
+  }
+
+  .testimonial-section .carousel-track .pos-center {
+    transform: translate(-38%, -50%);
+
+  }
+
+  .testimonial-section .carousel-track .pos-right {
+    transform: translate(calc(50% + -192px), -50%);
   }
 
   .Ticket-section .Ticket-card .Ticket-btn {
@@ -984,7 +996,8 @@ body {
     font-size: 24px;
   }
 
-  .features-section .feature-card-content .feature-card-description {
+  .features-section .feature-card-content .feature-card-description  ,
+  .features-section .feature-card-content .feature-card-description-right {
     font-size: 19px;
   }
 
@@ -1112,21 +1125,16 @@ body {
   .attend-section .attend-section-content .attend-image-right {
     right: -5px;
     max-width: 150px;
-    height: auto;
   }
 
   .carousel-section .attendes-carousel-title,
   .carousel-buttons {
-    margin: 55px 0 0 0;
+    margin: 55px 0 0 0 !important;
   }
 
   .carousel-section .attendes-carousel-title {
     font-size: 28px;
     max-width: 100%;
-  }
-
-  .carousel-section .carousel-buttons {
-    margin-top: 15px;
   }
 
   .carousel-section .carousel-buttons .carousel-button {
@@ -1215,8 +1223,8 @@ body {
   }
 
   .Ticket-section .Ticket-card .Ticket-btn {
-    font-size: 16px;
-    padding: 12px 15px;
+    font-size: 18px;
+    padding: 15px 15px;
     margin: 0 auto !important;
   }
 
@@ -1292,7 +1300,6 @@ body {
 
   .testimonial-section .carousel-track .testimonial-card {
     padding: 25px 30px;
-    height: auto;
     min-height: 320px;
   }
 
